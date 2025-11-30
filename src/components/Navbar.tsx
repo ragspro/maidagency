@@ -42,28 +42,28 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-40 px-6 pt-12">
+    <div className="fixed top-0 left-0 right-0 z-40 px-3 md:px-6 pt-8 md:pt-12 max-w-full overflow-hidden">
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="container mx-auto bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 hover:bg-white/15 transition-all duration-300"
+        className="container mx-auto bg-white/10 backdrop-blur-xl rounded-2xl md:rounded-3xl shadow-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 max-w-full"
         style={{
           boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
         }}
       >
-        <div className="px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="px-3 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <motion.button
             onClick={goHome}
-            className="flex items-center gap-3"
+            className="flex items-center gap-2 md:gap-3 flex-shrink min-w-0"
             whileHover={{ scale: 1.05 }}
           >
             <img 
               src={isScrolled ? "/logo1.png" : "/logo.png"}
               alt="Maid Placement Agency Baby Sitter Logo" 
-              className="h-12 w-auto transition-opacity duration-500"
+              className="h-8 md:h-12 w-auto transition-opacity duration-500 flex-shrink-0"
               onError={(e) => {
                 // Fallback if logo not found
                 e.currentTarget.style.display = 'none';
@@ -73,7 +73,7 @@ export const Navbar = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg items-center justify-center hidden">
               <span className="text-white font-bold text-lg">M</span>
             </div>
-            <span className={`font-bold text-xl transition-colors duration-500 ${
+            <span className={`font-bold text-sm md:text-base lg:text-xl transition-colors duration-500 truncate ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}>Maid Placement Agency Baby Sitter</span>
           </motion.button>
