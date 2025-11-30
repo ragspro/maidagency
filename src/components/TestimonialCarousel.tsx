@@ -36,7 +36,7 @@ export const TestimonialCarousel = () => {
     <section
       id="testimonials"
       ref={sectionRef}
-      className="testimonials-section py-16 px-6 bg-gradient-to-br from-purple-50 to-pink-50"
+      className="testimonials-section py-10 md:py-14 px-4 md:px-6 bg-gradient-to-br from-purple-50 to-pink-50"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -45,17 +45,17 @@ export const TestimonialCarousel = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-8 md:mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-2 md:mb-3">
             What Parents Say
           </h2>
-          <p className="text-base text-gray-600">
+          <p className="text-sm md:text-base text-gray-600">
             Trusted by 5000+ families across Delhi NCR
           </p>
         </motion.div>
 
-        <div className="relative min-h-[350px] flex items-center justify-center">
+        <div className="relative min-h-[280px] md:min-h-[320px] flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -67,12 +67,12 @@ export const TestimonialCarousel = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.3 }}
-              className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20 cursor-grab active:cursor-grabbing"
+              className="bg-white/90 backdrop-blur-lg rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-2xl border border-white/20 cursor-grab active:cursor-grabbing"
             >
               {/* Profile Picture and Stars at Top */}
-              <div className="flex flex-col items-center mb-6">
+              <div className="flex flex-col items-center mb-4 md:mb-5">
                 {currentTestimonial.photo && (
-                  <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-indigo-200 shadow-lg mb-4">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-3 md:border-4 border-indigo-200 shadow-lg mb-3 md:mb-4">
                     <img
                       src={currentTestimonial.photo}
                       alt={currentTestimonial.name}
@@ -81,24 +81,24 @@ export const TestimonialCarousel = () => {
                   </div>
                 )}
                 
-                <div className="flex justify-center gap-1 mb-2">
+                <div className="flex justify-center gap-0.5 md:gap-1 mb-1.5 md:mb-2">
                   {[...Array(currentTestimonial.rating)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <svg key={i} className="w-4 h-4 md:w-5 md:h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                 </div>
 
-                <p className="font-medium text-gray-900 text-lg">
+                <p className="font-medium text-gray-900 text-base md:text-lg">
                   {currentTestimonial.name}
                 </p>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs md:text-sm">
                   {currentTestimonial.location}
                 </p>
               </div>
               
               {/* Review Text */}
-              <p className="text-base text-gray-700 leading-relaxed italic text-center">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed italic text-center">
                 "{currentTestimonial.review}"
               </p>
             </motion.div>
@@ -107,32 +107,32 @@ export const TestimonialCarousel = () => {
           {/* Navigation Arrows */}
           <button
             onClick={() => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-indigo-50 transition-colors z-10"
+            className="absolute left-0 md:left-0 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-indigo-50 transition-colors z-10"
             aria-label="Previous testimonial"
           >
-            <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 md:w-6 md:h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           
           <button
             onClick={() => setCurrentIndex((prev) => (prev + 1) % testimonials.length)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-indigo-50 transition-colors z-10"
+            className="absolute right-0 md:right-0 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-indigo-50 transition-colors z-10"
             aria-label="Next testimonial"
           >
-            <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 md:w-6 md:h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
 
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex justify-center gap-1.5 md:gap-2 mt-6 md:mt-8">
           {testimonials.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                index === currentIndex ? 'bg-indigo-600 w-8' : 'bg-gray-300'
+              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${
+                index === currentIndex ? 'bg-indigo-600 w-6 md:w-8' : 'bg-gray-300'
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />

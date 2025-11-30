@@ -8,21 +8,21 @@ export const ServicesGrid = () => {
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
 
   return (
-    <section id="services" ref={sectionRef} className="services-section py-20 px-6 bg-white">
+    <section id="services" ref={sectionRef} className="services-section py-10 md:py-16 px-4 md:px-6 bg-white">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header with Image */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-center mb-10 md:mb-16">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isVisible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/20">
+            <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/20">
               <img 
                 src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" 
                 alt="Baby Care Services"
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[250px] md:h-[350px] lg:h-[400px] object-cover"
               />
             </div>
           </motion.div>
@@ -32,20 +32,20 @@ export const ServicesGrid = () => {
             animate={isVisible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-xs uppercase tracking-widest text-indigo-600 mb-4 font-medium">
+            <p className="text-[10px] md:text-xs uppercase tracking-widest text-indigo-600 mb-2 md:mb-4 font-medium">
               — WHO WE ARE
             </p>
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-5 leading-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-3 md:mb-5 leading-tight">
               Professional Baby Care Solutions
             </h2>
-            <p className="text-base text-gray-600 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
               Professional baby care tailored to your family's needs. We provide verified, trained nannies who treat your children with love and care.
             </p>
           </motion.div>
         </div>
 
         {/* Services Grid */}
-        <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {services.map((service, index) => (
             <motion.article
               key={service.id}
@@ -53,15 +53,15 @@ export const ServicesGrid = () => {
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -10, boxShadow: '0 25px 50px rgba(0,0,0,0.1)' }}
-              className="service-card bg-white/80 backdrop-blur-lg rounded-3xl p-8 shadow-lg border border-white/20 hover:border-indigo-200 transition-all group"
+              className="service-card bg-white/80 backdrop-blur-lg rounded-2xl md:rounded-3xl p-5 md:p-7 shadow-lg border border-white/20 hover:border-indigo-200 transition-all group"
             >
-              <div className="inline-flex items-center justify-center px-4 py-2 bg-indigo-100 text-indigo-600 rounded-full text-sm font-bold mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+              <div className="inline-flex items-center justify-center px-3 py-1.5 md:px-4 md:py-2 bg-indigo-100 text-indigo-600 rounded-full text-xs md:text-sm font-bold mb-3 md:mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-all">
                 {service.icon}
               </div>
-              <h3 className="text-lg font-medium text-gray-900 mb-3">
+              <h3 className="text-base md:text-lg font-medium text-gray-900 mb-2 md:mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-5">
+              <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-3 md:mb-4">
                 {service.description}
               </p>
               <button
@@ -81,7 +81,7 @@ export const ServicesGrid = () => {
                     window.location.hash = 'contact';
                   }
                 }}
-                className="text-indigo-600 font-medium text-sm inline-flex items-center gap-2 group-hover:gap-3 transition-all hover:underline"
+                className="text-indigo-600 font-medium text-xs md:text-sm inline-flex items-center gap-2 group-hover:gap-3 transition-all hover:underline"
               >
                 Learn More <span>→</span>
               </button>

@@ -31,18 +31,18 @@ export const ProcessTimeline = () => {
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
 
   return (
-    <section ref={sectionRef} className="process-section py-16 px-6 bg-white">
+    <section ref={sectionRef} className="process-section py-10 md:py-14 px-4 md:px-6 bg-white">
       <div className="container mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8 md:mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-2 md:mb-3">
             How It Works
           </h2>
-          <p className="text-base text-gray-600">
+          <p className="text-sm md:text-base text-gray-600">
             Simple steps to find your perfect nanny
           </p>
         </motion.div>
@@ -77,23 +77,25 @@ export const ProcessTimeline = () => {
           ))}
         </div>
 
-        <div className="md:hidden space-y-8">
+        <div className="md:hidden space-y-5">
           {processSteps.map((step, index) => (
             <motion.div
               key={step.id}
               initial={{ opacity: 0, x: -30 }}
               animate={isVisible ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="flex items-start gap-4"
+              className="flex items-start gap-3"
             >
-              <div className="flex-shrink-0 w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-lg">
-                {stepIcons[index]}
+              <div className="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-lg">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  {stepIcons[index].props.children}
+                </svg>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-medium text-gray-900 mb-2">
+                <h3 className="text-base font-medium text-gray-900 mb-1">
                   {step.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm">
                   {step.description}
                 </p>
               </div>

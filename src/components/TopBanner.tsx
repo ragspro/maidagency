@@ -6,7 +6,7 @@ export const TopBanner = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 text-white py-2 text-center text-sm overflow-hidden"
+      className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 text-white py-1.5 md:py-2 text-center text-[10px] md:text-xs lg:text-sm overflow-hidden"
     >
       <motion.div
         animate={{ x: [0, -1000] }}

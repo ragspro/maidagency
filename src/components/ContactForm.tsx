@@ -65,11 +65,11 @@ export const ContactForm = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       onSubmit={handleSubmit}
-      className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 shadow-2xl border border-white/20"
+      className="bg-white/90 backdrop-blur-lg rounded-2xl md:rounded-3xl p-5 md:p-7 shadow-2xl border border-white/20"
     >
-      <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
+      <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 md:mb-5">Get in Touch</h3>
 
-      <div className="space-y-5">
+      <div className="space-y-3 md:space-y-4">
         <div className="relative">
           <input
             type="text"
@@ -77,12 +77,12 @@ export const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Your Name"
-            className={`w-full px-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+            className={`w-full px-3 py-2.5 md:px-4 md:py-3 border-2 rounded-lg md:rounded-xl text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
               errors.name ? 'border-red-500' : 'border-gray-300'
             }`}
           />
           {errors.name && (
-            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+            <p className="text-red-500 text-xs md:text-sm mt-1">{errors.name}</p>
           )}
         </div>
 
@@ -93,12 +93,12 @@ export const ContactForm = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Phone Number"
-            className={`w-full px-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+            className={`w-full px-3 py-2.5 md:px-4 md:py-3 border-2 rounded-lg md:rounded-xl text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
               errors.phone ? 'border-red-500' : 'border-gray-300'
             }`}
           />
           {errors.phone && (
-            <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+            <p className="text-red-500 text-xs md:text-sm mt-1">{errors.phone}</p>
           )}
         </div>
 
@@ -109,12 +109,12 @@ export const ContactForm = () => {
             value={formData.babyAge}
             onChange={handleChange}
             placeholder="Baby's Age (e.g., 6 months)"
-            className={`w-full px-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+            className={`w-full px-3 py-2.5 md:px-4 md:py-3 border-2 rounded-lg md:rounded-xl text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
               errors.babyAge ? 'border-red-500' : 'border-gray-300'
             }`}
           />
           {errors.babyAge && (
-            <p className="text-red-500 text-sm mt-1">{errors.babyAge}</p>
+            <p className="text-red-500 text-xs md:text-sm mt-1">{errors.babyAge}</p>
           )}
         </div>
 
@@ -123,7 +123,7 @@ export const ContactForm = () => {
             name="serviceType"
             value={formData.serviceType}
             onChange={handleChange}
-            className={`w-full px-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+            className={`w-full px-3 py-2.5 md:px-4 md:py-3 border-2 rounded-lg md:rounded-xl text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
               errors.serviceType ? 'border-red-500' : 'border-gray-300'
             }`}
           >
@@ -135,7 +135,7 @@ export const ContactForm = () => {
             ))}
           </select>
           {errors.serviceType && (
-            <p className="text-red-500 text-sm mt-1">{errors.serviceType}</p>
+            <p className="text-red-500 text-xs md:text-sm mt-1">{errors.serviceType}</p>
           )}
         </div>
 
@@ -145,13 +145,13 @@ export const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Additional Message (Optional)"
-            rows={4}
-            className={`w-full px-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all resize-none ${
+            rows={3}
+            className={`w-full px-3 py-2.5 md:px-4 md:py-3 border-2 rounded-lg md:rounded-xl text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all resize-none ${
               errors.message ? 'border-red-500' : 'border-gray-300'
             }`}
           />
           {errors.message && (
-            <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            <p className="text-red-500 text-xs md:text-sm mt-1">{errors.message}</p>
           )}
         </div>
 
@@ -160,7 +160,7 @@ export const ContactForm = () => {
           disabled={isSubmitting}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full py-3.5 bg-indigo-600 text-white rounded-2xl font-medium text-base shadow-lg hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full py-2.5 md:py-3 bg-indigo-600 text-white rounded-xl md:rounded-2xl font-medium text-sm md:text-base shadow-lg hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? 'Sending...' : 'Submit Inquiry'}
         </motion.button>
@@ -170,7 +170,7 @@ export const ContactForm = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 p-4 bg-green-100 text-green-800 rounded-xl"
+          className="mt-3 md:mt-4 p-3 md:p-4 bg-green-100 text-green-800 rounded-lg md:rounded-xl text-xs md:text-sm"
         >
           Thank you! We'll contact you within 24 hours.
         </motion.div>
@@ -180,7 +180,7 @@ export const ContactForm = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 p-4 bg-red-100 text-red-800 rounded-xl"
+          className="mt-3 md:mt-4 p-3 md:p-4 bg-red-100 text-red-800 rounded-lg md:rounded-xl text-xs md:text-sm"
         >
           {submitError}
         </motion.div>
