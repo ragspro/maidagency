@@ -15,11 +15,8 @@ function Root() {
       orientation: 'vertical',
       smoothWheel: !isMobile, // Disable smooth wheel on mobile for better performance
       wheelMultiplier: isMobile ? 0.5 : 1,
-      touchMultiplier: isMobile ? 1.5 : 2,
+      touchMultiplier: isMobile ? 2 : 2,
       infinite: false,
-      syncTouch: true, // Better touch handling
-      syncTouchLerp: 0.1, // Smooth touch interpolation
-      touchInertiaMultiplier: isMobile ? 20 : 35, // Better momentum on mobile
     })
 
     function raf(time: number) {
