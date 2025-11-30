@@ -22,12 +22,8 @@ export default defineConfig({
         },
       },
     },
-    minify: 'esbuild',
     cssMinify: true,
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1000,
-  },
-  optimizeDeps: {
-    include: ['react', 'react-dom', 'framer-motion', 'lenis'],
   },
 })
