@@ -17,10 +17,13 @@ export const TopBanner = () => {
             alignItems: 'center',
           }}
         >
-          <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 30px' }}>
+          <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 20px' }}>
             📞 Call 9971691558 • Live-In Nanny ₹12,999/month • Newborn Care ₹14,999/month • Free 3-Day Trial • North East Nannies • 24-Hour Replacement
           </span>
-          <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 30px' }}>
+          <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 20px' }}>
+            📞 Call 9971691558 • Live-In Nanny ₹12,999/month • Newborn Care ₹14,999/month • Free 3-Day Trial • North East Nannies • 24-Hour Replacement
+          </span>
+          <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 20px' }}>
             📞 Call 9971691558 • Live-In Nanny ₹12,999/month • Newborn Care ₹14,999/month • Free 3-Day Trial • North East Nannies • 24-Hour Replacement
           </span>
         </div>
