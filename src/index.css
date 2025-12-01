@@ -40,25 +40,45 @@ html {
   background: linear-gradient(180deg, #4f46e5, #7c3aed);
 }
 
-/* Lenis Smooth Scroll */
-html.lenis {
-  height: auto;
+/* Lenis Smooth Scroll - Desktop Only */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
 }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
+/* Mobile - Disable Lenis, use native scroll */
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+  html.lenis,
+  html {
+    height: auto !important;
+    scroll-behavior: smooth !important;
+  }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
+  .lenis.lenis-smooth {
+    scroll-behavior: smooth !important;
+  }
+  
+  body {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
 }
 
 * {
@@ -511,21 +531,57 @@ img[loading="lazy"]:not([src]) {
   }
 }
 
-/* Smooth scrolling for mobile */
+/* Smooth scrolling for mobile - Native smooth scroll */
 @media (max-width: 768px) {
   html {
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
   }
   
   body {
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    /* Remove any scroll blocking */
+    overscroll-behavior-y: contain;
   }
   
-  /* Optimize animations for mobile */
+  /* Optimize scroll performance on mobile */
   * {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    /* Improve scroll performance */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  /* Disable Lenis on mobile */
+  html.lenis {
+    height: auto !important;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: smooth !important;
+  }
+}
+
+/* Touch device optimization */
+@media (hover: none) and (pointer: coarse) {
+  html {
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  body {
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-y: contain;
+  }
+  
+  /* Ensure smooth native scrolling */
+  * {
+    scroll-behavior: smooth;
   }
 }
 

@@ -8,29 +8,38 @@ function Root() {
   useEffect(() => {
     // Check if mobile device
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    const isLowEndDevice = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
+    const isTablet = /iPad|Android/i.test(navigator.userAgent) && window.innerWidth >= 768;
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     
-    const lenis = new Lenis({
-      duration: isMobile || isLowEndDevice ? 0.6 : 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      smoothWheel: !isMobile && !isLowEndDevice,
-      wheelMultiplier: isMobile ? 0.5 : 1,
-      touchMultiplier: isMobile ? 1.5 : 2,
-      infinite: false,
-      syncTouch: true,
-      syncTouchLerp: 0.1,
-    })
+    // Only use Lenis on desktop (non-touch devices)
+    if (!isMobile && !isTouchDevice && !isTablet) {
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        touchMultiplier: 2,
+        infinite: false,
+      })
 
-    function raf(time: number) {
-      lenis.raf(time)
+      function raf(time: number) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+
       requestAnimationFrame(raf)
-    }
 
-    requestAnimationFrame(raf)
-
-    return () => {
-      lenis.destroy()
+      return () => {
+        lenis.destroy()
+      }
+    } else {
+      // Mobile/Touch devices: Use native smooth scroll
+      document.documentElement.style.scrollBehavior = 'smooth';
+      
+      return () => {
+        document.documentElement.style.scrollBehavior = 'auto';
+      }
     }
   }, [])
 
