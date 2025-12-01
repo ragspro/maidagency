@@ -45,7 +45,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed left-0 right-0 z-40 px-3 md:px-6 max-w-full overflow-hidden" style={{ top: '28px' }}>
+    <div className="fixed left-0 right-0 z-40 px-3 md:px-6 max-w-full overflow-hidden top-7 md:top-8">
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

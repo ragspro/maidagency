@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export const Hero = () => {
   return (
-    <section className="hero-section min-h-[85vh] md:min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-20 md:pt-28 pb-8 md:pb-0">
+    <section className="hero-section min-h-[85vh] md:min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-32 md:pt-36 lg:pt-40 pb-8 md:pb-0">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=1920')] bg-cover bg-center opacity-20"></div>
       
