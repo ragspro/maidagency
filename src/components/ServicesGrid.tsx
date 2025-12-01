@@ -35,8 +35,10 @@ export const ServicesGrid = () => {
           >
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/20">
               <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" 
+                src="/baby-care1.png" 
                 alt="Baby Care Services"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-[250px] md:h-[350px] lg:h-[400px] object-cover"
               />
             </div>

@@ -11,7 +11,7 @@ export const processSteps: ProcessStep[] = [
     id: 'step-1',
     number: 1,
     title: 'Call or WhatsApp Our Team',
-    description: 'Contact us at 9910443876 or 8130135822',
+    description: 'Contact us at 8595661698 or 9971691558',
     icon: '1'
   },
   {

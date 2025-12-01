@@ -13,7 +13,7 @@ export const FloatingButtons = () => {
     <>
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/918130135822?text=Hi, I'm interested in your baby care services"
+        href="https://wa.me/919971691558?text=Hi, I'm interested in your baby care services"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contact us on WhatsApp"
@@ -42,7 +42,7 @@ export const FloatingButtons = () => {
 
       {/* Phone Button */}
       <a
-        href="tel:9910443876"
+        href="tel:8595661698"
         aria-label="Call us"
         style={{
           position: 'fixed',

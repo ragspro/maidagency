@@ -471,6 +471,8 @@ section {
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 /* Optimize images for faster loading */
@@ -478,6 +480,20 @@ img {
   content-visibility: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  image-rendering: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure images load properly */
+img[loading="lazy"] {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img[loading="lazy"]:not([src]) {
+  opacity: 0;
 }
 
 /* Reduce paint areas and improve performance */

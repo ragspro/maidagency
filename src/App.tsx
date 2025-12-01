@@ -7,6 +7,7 @@ import { FloatingButtons } from './components/FloatingButtons';
 
 // Lazy load components for better performance
 const ServicesGrid = lazy(() => import('./components/ServicesGrid').then(m => ({ default: m.ServicesGrid })));
+const AboutUs = lazy(() => import('./components/AboutUs').then(m => ({ default: m.AboutUs })));
 const WhyChooseUs = lazy(() => import('./components/WhyChooseUs').then(m => ({ default: m.WhyChooseUs })));
 const ProcessTimeline = lazy(() => import('./components/ProcessTimeline').then(m => ({ default: m.ProcessTimeline })));
 const TestimonialCarousel = lazy(() => import('./components/TestimonialCarousel').then(m => ({ default: m.TestimonialCarousel })));
@@ -83,6 +84,7 @@ function App() {
       <TrustBar />
       <Suspense fallback={<div className="py-20" />}>
         <ServicesGrid />
+        <AboutUs />
         <WhyChooseUs />
         <ProcessTimeline />
         <TestimonialCarousel />

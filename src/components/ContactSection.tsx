@@ -52,7 +52,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm md:text-base">Address</p>
-                    <p className="text-gray-600 text-xs md:text-sm">Pillanji, South Extension, Delhi NCR</p>
+                    <p className="text-gray-600 text-xs md:text-sm">2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003</p>
                   </div>
                 </div>
 
@@ -64,11 +64,11 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm md:text-base">Phone</p>
-                    <a href="tel:9910443876" className="text-indigo-600 hover:underline text-xs md:text-sm block">
-                      9910443876
+                    <a href="tel:8595661698" className="text-indigo-600 hover:underline text-xs md:text-sm block">
+                      8595661698
                     </a>
-                    <a href="tel:8130135822" className="text-indigo-600 hover:underline text-xs md:text-sm block">
-                      8130135822
+                    <a href="tel:9971691558" className="text-indigo-600 hover:underline text-xs md:text-sm block">
+                      9971691558
                     </a>
                   </div>
                 </div>
@@ -81,8 +81,8 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm md:text-base">Email</p>
-                    <a href="mailto:sewaenterprises2@gmail.com" className="text-indigo-600 hover:underline text-xs md:text-sm break-all">
-                      sewaenterprises2@gmail.com
+                    <a href="mailto:subhashthapa87@gmail.com" className="text-indigo-600 hover:underline text-xs md:text-sm break-all">
+                      subhashthapa87@gmail.com
                     </a>
                   </div>
                 </div>
@@ -102,14 +102,14 @@ export const ContactSection = () => {
 
               <div className="aspect-video rounded-xl md:rounded-2xl overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.5!2d77.2!3d28.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMwJzAwLjAiTiA3N8KwMTInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8!2d77.2144!3d28.5706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s2034B%2F3%2C+South+Extension+I%2C+Kotla+Mubarakpur%2C+New+Delhi%2C+Delhi+110003!5e0!3m2!1sen!2sin!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Office Location"
+                  title="Office Location - 2034B/3, South Extension I, Kotla Mubarakpur"
                 ></iframe>
               </div>
             </div>

@@ -30,8 +30,10 @@ export const WhyChooseUs = () => {
           >
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl backdrop-blur-sm border border-white/20">
               <img 
-                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800" 
+                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&auto=format&q=75" 
                 alt="Happy Baby with Caregiver"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-[280px] md:h-[400px] lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent"></div>

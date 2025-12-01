@@ -8,15 +8,18 @@ function Root() {
   useEffect(() => {
     // Check if mobile device
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const isLowEndDevice = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
     
     const lenis = new Lenis({
-      duration: isMobile ? 0.8 : 1.2,
+      duration: isMobile || isLowEndDevice ? 0.6 : 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
-      smoothWheel: !isMobile, // Disable smooth wheel on mobile for better performance
+      smoothWheel: !isMobile && !isLowEndDevice,
       wheelMultiplier: isMobile ? 0.5 : 1,
-      touchMultiplier: isMobile ? 2 : 2,
+      touchMultiplier: isMobile ? 1.5 : 2,
       infinite: false,
+      syncTouch: true,
+      syncTouchLerp: 0.1,
     })
 
     function raf(time: number) {

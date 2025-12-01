@@ -81,24 +81,24 @@ export const Footer = () => {
             <ul className="space-y-2 md:space-y-3 text-gray-400 text-xs md:text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <span>Pillanji, South Extension, Delhi NCR</span>
+                <span>2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <a href="tel:9910443876" className="hover:text-white transition-colors">
-                  9910443876
+                <a href="tel:8595661698" className="hover:text-white transition-colors">
+                  8595661698
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <a href="tel:8130135822" className="hover:text-white transition-colors">
-                  8130135822
+                <a href="tel:9971691558" className="hover:text-white transition-colors">
+                  9971691558
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <a href="mailto:sewaenterprises2@gmail.com" className="hover:text-white transition-colors">
-                  sewaenterprises2@gmail.com
+                <a href="mailto:subhashthapa87@gmail.com" className="hover:text-white transition-colors">
+                  subhashthapa87@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">

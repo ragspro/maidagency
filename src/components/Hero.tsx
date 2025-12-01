@@ -51,16 +51,25 @@ export const Hero = () => {
               className="flex flex-wrap gap-3 md:gap-4 mb-5 md:mb-8"
             >
               <motion.a
-                href="tel:9910443876"
+                href="tel:8595661698"
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(99, 102, 241, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
                 className="px-5 py-2.5 md:px-8 md:py-3.5 bg-indigo-600 text-white rounded-full font-medium text-sm md:text-base shadow-xl hover:bg-indigo-700 transition-all inline-flex items-center gap-2"
               >
-                Call Now – 9910443876
+                Call Now – 8595661698
                 <span className="text-base md:text-lg">📞</span>
               </motion.a>
               <motion.a
-                href="https://wa.me/918130135822?text=Hi%2C%20I%20need%20baby%20care%20services.%20Please%20share%20details."
+                href="tel:9971691558"
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(99, 102, 241, 0.4)" }}
+                whileTap={{ scale: 0.95 }}
+                className="px-5 py-2.5 md:px-8 md:py-3.5 bg-purple-600 text-white rounded-full font-medium text-sm md:text-base shadow-xl hover:bg-purple-700 transition-all inline-flex items-center gap-2"
+              >
+                Call Now – 9971691558
+                <span className="text-base md:text-lg">📞</span>
+              </motion.a>
+              <motion.a
+                href="https://wa.me/919971691558?text=Hi%2C%20I%20need%20baby%20care%20services.%20Please%20share%20details."
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(34, 197, 94, 0.4)" }}
@@ -107,9 +116,12 @@ export const Hero = () => {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl backdrop-blur-sm">
               <img 
-                src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800" 
+                src="/baby1.png" 
                 alt="Professional Baby Care"
-                className="w-full h-[500px] xl:h-[600px] object-cover"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+                className="w-full h-[500px] xl:h-[600px] object-cover object-[70%]"
               />
               
               {/* Testimonial Card Overlay */}
@@ -122,8 +134,10 @@ export const Hero = () => {
                 <div className="flex items-start gap-3">
                   <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-indigo-200 shadow-lg flex-shrink-0">
                     <img
-                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=faces"
+                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=faces&auto=format&q=75"
                       alt="Priya Sharma"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </div>

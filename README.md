@@ -1,33 +1,20 @@
 # Baby Sitter Agency Website
 
-A modern, premium baby sitter agency website built with React, TypeScript, and Framer Motion. Features smooth animations, responsive design, and conversion-optimized layout.
+Delhi NCR's Most Trusted 24-Hour Baby Care Agency website built with React, TypeScript, and TailwindCSS.
 
-## 🚀 Features
+## 🚀 Quick Start
 
-- **Modern Design**: Apple/Airbnb-inspired aesthetics with glassmorphism effects
-- **Smooth Animations**: Framer Motion powered micro-interactions and scroll animations
-- **Fully Responsive**: Mobile-first design that works on all devices
-- **SEO Optimized**: Meta tags, structured data, and sitemap included
-- **Contact Form**: EmailJS integration for form submissions
-- **Performance**: Optimized build with code splitting and lazy loading
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-## 📦 Tech Stack
-
-- **React 19** - UI framework
-- **TypeScript** - Type safety
-- **Vite** - Build tool
-- **Framer Motion** - Animations
-- **EmailJS** - Contact form integration
-- **Lenis** - Smooth scrolling
-- **GSAP** - Advanced animations
-
-## 🛠️ Installation
+### Installation
 
 ```bash
 # Install dependencies
 npm install
 
-# Start development server
+# Run development server
 npm run dev
 
 # Build for production
@@ -35,16 +22,35 @@ npm run build
 
 # Preview production build
 npm run preview
+
+# Run tests
+npm run test
+
+# Run tests with UI
+npm run test:ui
 ```
 
-## 📝 Configuration
+## 📁 Project Structure
+
+```
+src/
+├── components/        # React components
+├── data/             # Static data (services, testimonials, FAQs)
+├── hooks/            # Custom React hooks
+├── utils/            # Utility functions
+├── test/             # Test setup files
+├── App.tsx           # Main app component
+└── main.tsx          # Entry point
+```
+
+## 🔧 Configuration
 
 ### EmailJS Setup
 
 1. Create an account at [EmailJS](https://www.emailjs.com/)
 2. Create a new email service
 3. Create an email template
-4. Update the credentials in `src/utils/emailService.ts`:
+4. Update `src/utils/emailService.ts` with your credentials:
 
 ```typescript
 const SERVICE_ID = 'your_service_id';
@@ -52,24 +58,38 @@ const TEMPLATE_ID = 'your_template_id';
 const PUBLIC_KEY = 'your_public_key';
 ```
 
-### Updating Content
+### Environment Variables
 
-#### Services
-Edit `src/data/services.ts` to update service offerings:
+Create a `.env` file in the root directory:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+## 📝 Content Management
+
+### Updating Services
+
+Edit `src/data/services.ts`:
 
 ```typescript
 export const services: Service[] = [
   {
-    id: 'service-id',
-    icon: '🏠',
+    id: 'unique-id',
+    icon: 'icon-name',
     title: 'Service Title',
-    description: 'Service description'
-  }
+    description: 'Service description',
+    priceRange: '₹18,000 – ₹22,000 per month',
+    // ... other fields
+  },
 ];
 ```
 
-#### Testimonials
-Edit `src/data/testimonials.ts` to update customer reviews:
+### Updating Testimonials
+
+Edit `src/data/testimonials.ts`:
 
 ```typescript
 export const testimonials: Testimonial[] = [
@@ -78,95 +98,126 @@ export const testimonials: Testimonial[] = [
     name: 'Customer Name',
     location: 'Location',
     rating: 5,
-    review: 'Review text'
-  }
+    review: 'Review text',
+    photo: 'https://image-url.com/photo.jpg'
+  },
 ];
 ```
 
-#### FAQs
-Edit `src/data/faqs.ts` to update frequently asked questions:
+### Updating FAQs
+
+Edit `src/data/faqs.ts`:
 
 ```typescript
 export const faqs: FAQItem[] = [
   {
     id: 'faq-1',
-    question: 'Question?',
-    answer: 'Answer text'
-  }
+    question: 'Your question?',
+    answer: 'Your answer'
+  },
 ];
 ```
 
-#### Contact Information
-Update contact details in:
-- `src/components/Footer.tsx` - Footer contact info
-- `src/components/ContactSection.tsx` - Contact section
-- `src/components/FloatingButtons.tsx` - WhatsApp and call buttons
-- `index.html` - Meta tags and structured data
+### Updating Contact Details
+
+Update contact information in:
+- `src/components/Footer.tsx` - Footer contact section
+- `src/components/FloatingButtons.tsx` - WhatsApp and Call buttons
+- `src/components/Hero.tsx` - Hero CTA buttons
+- `index.html` - Meta tags and Schema.org data
+
+## 🧪 Testing
+
+### Run All Tests
+```bash
+npm run test
+```
+
+### Run Tests with UI
+```bash
+npm run test:ui
+```
+
+### Run Tests Once
+```bash
+npm run test:run
+```
+
+## 🚀 Deployment
+
+### Deploy to Vercel
+
+1. Push your code to GitHub
+2. Import project in [Vercel](https://vercel.com)
+3. Configure build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+4. Add environment variables in Vercel dashboard
+5. Deploy!
+
+### Manual Deployment
+
+```bash
+# Build the project
+npm run build
+
+# The dist/ folder contains production-ready files
+# Upload to your hosting provider
+```
 
 ## 🎨 Customization
 
 ### Colors
-The website uses a modern color palette. To customize colors, update the CSS classes in components:
 
-- Primary: `bg-indigo-600`, `text-indigo-600`
-- Secondary: `bg-purple-600`, `text-purple-600`
-- Accent: `bg-green-500`, `text-green-500`
+Edit `tailwind.config.js` to customize colors:
 
-### Animations
-Animations are configured using Framer Motion. To adjust animation timing:
-
-```typescript
-<motion.div
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }} // Adjust duration here
->
+```javascript
+theme: {
+  extend: {
+    colors: {
+      primary: '#4A90E2',
+      secondary: '#FFB6B9',
+      accent: '#F4C430',
+    }
+  }
+}
 ```
 
-## 📱 Responsive Design
+### Fonts
 
-The website is fully responsive with breakpoints:
-- Mobile: < 768px
-- Tablet: 768px - 1024px
-- Desktop: > 1024px
+Update fonts in `src/index.css` or `index.html`.
 
-## 🔍 SEO
+## 📱 Features
 
-SEO features included:
-- Meta tags (title, description, keywords)
-- Open Graph tags for social media
-- Twitter Card tags
-- Schema.org structured data (LocalBusiness)
-- XML sitemap
-- robots.txt
+- ✅ Responsive design (mobile, tablet, desktop)
+- ✅ Smooth scrolling with Lenis.js
+- ✅ Animations with Framer Motion
+- ✅ Contact form with EmailJS integration
+- ✅ SEO optimized with meta tags and Schema.org
+- ✅ Lazy loading images
+- ✅ Testimonial carousel
+- ✅ FAQ accordion
+- ✅ Service modals
+- ✅ Blog system
+- ✅ Review submission form
+- ✅ WhatsApp & Call floating buttons
 
-## 🚀 Deployment
+## 🛠️ Tech Stack
 
-### Vercel (Recommended)
+- **Framework**: React 19 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion, GSAP, Lenis.js
+- **Form Handling**: EmailJS
+- **Testing**: Vitest, React Testing Library, fast-check
+- **Deployment**: Vercel
 
-1. Push code to GitHub
-2. Import project in Vercel
-3. Configure environment variables (if needed)
-4. Deploy!
+## 📞 Support
 
-### Other Platforms
-
-The build output is in the `dist` folder after running `npm run build`. Upload this folder to any static hosting service.
-
-## 📊 Performance
-
-- First Contentful Paint: < 1.5s
-- Largest Contentful Paint: < 2.5s
-- Time to Interactive: < 3.0s
-- Lighthouse Score: 90+
-
-## 🤝 Support
-
-For questions or issues:
-- Phone: 9971691558
-- Email: info@babysitteragency.com
-- WhatsApp: [Click to chat](https://wa.me/919971691558)
+For issues or questions:
+- Email: sewaenterprises2@gmail.com
+- Phone: +91-8595661698, +91-9971691558
 
 ## 📄 License
 
-© 2024 Baby Sitter Agency. All rights reserved.
+Copyright © 2024 Maid Placement Agency Baby Sitter. All rights reserved.

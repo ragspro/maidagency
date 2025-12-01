@@ -43,6 +43,6 @@ export const faqs: FAQItem[] = [
   {
     id: 'faq-8',
     question: 'How quickly can you arrange a caregiver?',
-    answer: 'We can arrange verified caregivers within 24-48 hours of your request. For urgent requirements, we offer same-day placement subject to availability. Call 9910443876 for immediate assistance.'
+    answer: 'We can arrange verified caregivers within 24-48 hours of your request. For urgent requirements, we offer same-day placement subject to availability. Call 8595661698 for immediate assistance.'
   }
 ];

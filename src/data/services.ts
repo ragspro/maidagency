@@ -90,7 +90,7 @@ export const services: Service[] = [
     icon: 'cook',
     title: 'Cook & Domestic Helper',
     description: 'Live-in household staff for cooking (veg/non-veg), cleaning, kitchen management and daily house help assistance.',
-    priceRange: '₹12,000 – ₹20,000 per month',
+    priceRange: '₹20,000 – ₹30,000 per month',
     detailedDescription: 'Skilled domestic helpers who manage cooking, cleaning, and household tasks efficiently, allowing you to focus on what matters most.',
     features: [
       'Veg/Non-veg cooking',

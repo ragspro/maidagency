@@ -107,7 +107,7 @@ export const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) =>
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t">
                   <a
-                    href="https://wa.me/919910443876?text=Hi, I'm interested in the service"
+                    href="https://wa.me/919971691558?text=Hi, I'm interested in the service"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
@@ -118,7 +118,7 @@ export const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) =>
                     WhatsApp Us
                   </a>
                   <a
-                    href="tel:+919910443876"
+                    href="tel:+918595661698"
                     className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

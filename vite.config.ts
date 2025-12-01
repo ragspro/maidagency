@@ -18,12 +18,27 @@ export default defineConfig({
             if (id.includes('lenis')) {
               return 'lenis';
             }
+            if (id.includes('gsap')) {
+              return 'gsap';
+            }
           }
         },
       },
     },
     cssMinify: true,
+    minify: 'esbuild',
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1000,
+    target: 'es2015',
+    cssCodeSplit: true,
   },
+  server: {
+    hmr: {
+      overlay: false
+    }
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'framer-motion', 'lenis'],
+    exclude: []
+  }
 })

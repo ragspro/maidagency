@@ -106,7 +106,7 @@ export const Navbar = () => {
               Services
             </button>
             <button
-              onClick={() => scrollToSection('why-choose-us')}
+              onClick={() => scrollToSection('about')}
               className={`font-medium transition-all duration-300 ${
                 isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white/95 drop-shadow-lg hover:text-white'
               }`}
@@ -119,7 +119,7 @@ export const Navbar = () => {
                 isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white/95 drop-shadow-lg hover:text-white'
               }`}
             >
-              Testimonials
+              Reviews
             </button>
             <button
               onClick={() => scrollToSection('faq')}
@@ -129,17 +129,25 @@ export const Navbar = () => {
             >
               FAQ
             </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className={`font-medium transition-all duration-300 ${
+                isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white/95 drop-shadow-lg hover:text-white'
+              }`}
+            >
+              Contact
+            </button>
           </div>
 
           {/* Contact Button */}
           <div className="hidden lg:block">
             <motion.a
-              href="tel:9910443876"
+              href="tel:8595661698"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors inline-flex items-center gap-2"
             >
-              📞 9910443876
+              📞 8595661698
               <span className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                 →
               </span>
@@ -208,7 +216,7 @@ export const Navbar = () => {
                 Services
               </button>
               <button
-                onClick={() => scrollToSection('why-choose-us')}
+                onClick={() => scrollToSection('about')}
                 className={`font-medium py-2 text-left transition-colors duration-300 ${
                   isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white/95 hover:text-white'
                 }`}
@@ -221,7 +229,7 @@ export const Navbar = () => {
                   isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white/95 hover:text-white'
                 }`}
               >
-                Testimonials
+                Reviews
               </button>
               <button
                 onClick={() => scrollToSection('faq')}
@@ -231,11 +239,19 @@ export const Navbar = () => {
               >
                 FAQ
               </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className={`font-medium py-2 text-left transition-colors duration-300 ${
+                  isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white/95 hover:text-white'
+                }`}
+              >
+                Contact
+              </button>
               <a
-                href="tel:9910443876"
+                href="tel:8595661698"
                 className="px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors text-center mt-2 block"
               >
-                📞 Call 9910443876
+                📞 Call 8595661698
               </a>
             </div>
           </motion.div>
