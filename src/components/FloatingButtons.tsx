@@ -12,7 +12,7 @@ export const FloatingButtons = () => {
         transition={{ delay: 1, type: 'spring' }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-2xl hover:bg-green-600 transition-colors"
+        className="fixed bottom-6 right-4 md:right-6 z-[60] w-14 h-14 md:w-16 md:h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-2xl hover:bg-green-600 transition-colors"
         style={{ minWidth: '44px', minHeight: '44px' }}
       >
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -27,7 +27,7 @@ export const FloatingButtons = () => {
         transition={{ delay: 1.2, type: 'spring' }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 left-6 z-50 w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-2xl hover:bg-indigo-700 transition-colors"
+        className="fixed bottom-6 left-4 md:left-6 z-[60] w-14 h-14 md:w-16 md:h-16 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-2xl hover:bg-indigo-700 transition-colors"
         style={{ minWidth: '44px', minHeight: '44px' }}
       >
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

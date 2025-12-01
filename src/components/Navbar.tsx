@@ -42,12 +42,12 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-40 px-3 md:px-6 pt-8 md:pt-12 max-w-full overflow-hidden">
+    <div className="fixed left-0 right-0 z-40 px-3 md:px-6 max-w-full overflow-hidden" style={{ top: '28px' }}>
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="container mx-auto bg-white/10 backdrop-blur-xl rounded-2xl md:rounded-3xl shadow-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 max-w-full"
+        className="container mx-auto bg-white/10 backdrop-blur-xl rounded-2xl md:rounded-3xl shadow-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 max-w-full mt-2 md:mt-4"
         style={{
           boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
         }}
