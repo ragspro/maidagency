@@ -52,7 +52,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm md:text-base">Address</p>
-                    <p className="text-gray-600 text-xs md:text-sm">Pillanji, South Extension, Delhi</p>
+                    <p className="text-gray-600 text-xs md:text-sm">Pillanji, South Extension, Delhi NCR</p>
                   </div>
                 </div>
 
@@ -64,8 +64,25 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm md:text-base">Phone</p>
-                    <a href="tel:9971691558" className="text-indigo-600 hover:underline text-xs md:text-sm">
-                      9971691558
+                    <a href="tel:9910443876" className="text-indigo-600 hover:underline text-xs md:text-sm block">
+                      9910443876
+                    </a>
+                    <a href="tel:8130135822" className="text-indigo-600 hover:underline text-xs md:text-sm block">
+                      8130135822
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2.5 md:gap-3">
+                  <div className="w-7 h-7 md:w-8 md:h-8 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-3.5 h-3.5 md:w-4 md:h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm md:text-base">Email</p>
+                    <a href="mailto:sewaenterprises2@gmail.com" className="text-indigo-600 hover:underline text-xs md:text-sm break-all">
+                      sewaenterprises2@gmail.com
                     </a>
                   </div>
                 </div>
@@ -78,7 +95,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm md:text-base">Hours</p>
-                    <p className="text-gray-600 text-xs md:text-sm">Open 24/7</p>
+                    <p className="text-gray-600 text-xs md:text-sm">Open 24 Hours</p>
                   </div>
                 </div>
               </div>

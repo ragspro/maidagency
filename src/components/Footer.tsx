@@ -20,7 +20,7 @@ export const Footer = () => {
               </h3>
             </div>
             <p className="text-gray-400 mb-3 md:mb-4 text-xs md:text-sm">
-              Delhi NCR's most trusted 24/7 live-in baby care service. 15+ years of experience caring for families with love and dedication.
+              Delhi NCR's Most Trusted 24-Hour Baby Care Agency. Police-Verified North-East & Nepali Caregivers since 2006. 19+ years of experience.
             </p>
             <div className="flex gap-3 md:gap-4">
               <a
@@ -81,32 +81,42 @@ export const Footer = () => {
             <ul className="space-y-2 md:space-y-3 text-gray-400 text-xs md:text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <span>Pillanji, South Extension, Delhi</span>
+                <span>Pillanji, South Extension, Delhi NCR</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <a href="tel:9971691558" className="hover:text-white transition-colors">
-                  9971691558
+                <a href="tel:9910443876" className="hover:text-white transition-colors">
+                  9910443876
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <a href="mailto:info@sewa.com" className="hover:text-white transition-colors">
-                  info@sewa.com
+                <a href="tel:8130135822" className="hover:text-white transition-colors">
+                  8130135822
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <span>Open 24/7</span>
+                <a href="mailto:sewaenterprises2@gmail.com" className="hover:text-white transition-colors">
+                  sewaenterprises2@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-yellow-400">▸</span>
+                <span>🌐 maidagencyindelhi.in</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-yellow-400">▸</span>
+                <span>Open 24 Hours</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-5 md:pt-6 text-center text-gray-400">
-          <p className="text-xs md:text-sm">&copy; 2023 Maid Placement Agency Baby Sitter. All rights reserved.</p>
+          <p className="text-xs md:text-sm">&copy; 2006-2024 Maid Placement Agency Baby Sitter. All rights reserved.</p>
           <p className="mt-1.5 md:mt-2 text-[10px] md:text-xs">
-            Trusted by 5000+ families across Delhi NCR
+            19+ Years Experience • 5000+ Families Served • Police Verified Staff
           </p>
           <p className="mt-2 md:mt-3 text-[10px] md:text-xs">
             Developed by{' '}

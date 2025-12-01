@@ -7,15 +7,12 @@ export const BlogList = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
 
-  const scrollToBlog = (slug: string) => {
-    const blogElement = document.getElementById(slug);
-    if (blogElement) {
-      blogElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  const openBlog = (slug: string) => {
+    window.location.hash = `blog/${slug}`;
   };
 
   return (
-    <section ref={sectionRef} className="py-16 px-6 bg-gray-50">
+    <section ref={sectionRef} className="pt-32 md:pt-36 pb-16 px-6 bg-gray-50">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -39,7 +36,7 @@ export const BlogList = () => {
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-              onClick={() => scrollToBlog(post.slug)}
+              onClick={() => openBlog(post.slug)}
             >
               <div className="h-48 overflow-hidden">
                 <img

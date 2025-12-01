@@ -4,6 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Zoom Out - Makes everything smaller for better content density */
+html {
+  font-size: 14px; /* Default is 16px, this is ~12.5% smaller */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 13px; /* Even smaller on desktop for better fit */
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 14px; /* Slightly larger on very large screens */
+  }
+}
+
+/* Custom Scrollbar for Reviews */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6366f1, #8b5cf6);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #4f46e5, #7c3aed);
+}
+
 /* Lenis Smooth Scroll */
 html.lenis {
   height: auto;
@@ -59,9 +95,9 @@ body {
   text-size-adjust: 100%;
 }
 
+/* Note: font-size is set at the top of the file for global zoom control */
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
   /* Prevent zoom on double tap */
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
@@ -90,7 +126,7 @@ textarea {
 /* Mobile optimizations */
 @media (max-width: 768px) {
   html {
-    font-size: 16px;
+    /* font-size is controlled by global zoom settings at top */
     /* Prevent horizontal scroll */
     overflow-x: hidden;
     width: 100%;
@@ -422,21 +458,34 @@ img[loading="lazy"].loaded {
 .testimonials-section,
 .cta-section,
 section {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
 }
 
 /* Optimize images for faster loading */
 img {
   content-visibility: auto;
-  loading: lazy;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-/* Reduce paint areas */
+/* Reduce paint areas and improve performance */
 * {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+/* Optimize animations for 60fps */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 /* Smooth scrolling for mobile */
@@ -454,5 +503,89 @@ img {
   * {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+  }
+}
+
+/* Floating Buttons - Force visibility on all devices */
+.floating-button-whatsapp,
+.floating-button-phone {
+  position: fixed !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  -webkit-transform: translateZ(0) !important;
+  transform: translateZ(0) !important;
+  will-change: transform !important;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .floating-button-whatsapp {
+    position: fixed !important;
+    bottom: 24px !important;
+    right: 24px !important;
+    width: 64px !important;
+    height: 64px !important;
+    background-color: #25D366 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    transition: transform 0.2s ease !important;
+  }
+  
+  .floating-button-whatsapp:hover {
+    transform: scale(1.1) !important;
+  }
+  
+  .floating-button-phone {
+    position: fixed !important;
+    bottom: 24px !important;
+    left: 24px !important;
+    width: 64px !important;
+    height: 64px !important;
+    background-color: #4F46E5 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    transition: transform 0.2s ease !important;
+  }
+  
+  .floating-button-phone:hover {
+    transform: scale(1.1) !important;
+  }
+}
+
+/* Mobile specific - ensure buttons are always visible */
+@media (max-width: 768px) {
+  .floating-button-whatsapp {
+    position: fixed !important;
+    bottom: 16px !important;
+    right: 16px !important;
+    width: 56px !important;
+    height: 56px !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999 !important;
+    background-color: #25D366 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  }
+  
+  .floating-button-phone {
+    position: fixed !important;
+    bottom: 16px !important;
+    left: 16px !important;
+    width: 56px !important;
+    height: 56px !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999 !important;
+    background-color: #4F46E5 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
   }
 }

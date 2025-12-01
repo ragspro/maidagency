@@ -21,16 +21,16 @@ export const TopBanner = () => {
           }}
         >
           <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 30px' }}>
-            📞 Call 9971691558 • Live-In Nanny ₹12,999/month • Newborn Care ₹14,999/month • Free 3-Day Trial • North East Nannies • 24-Hour Replacement
+            📞 Call 9910443876 / 8130135822 • Babysitter ₹18,000/month • Nanny ₹22,000/month • Japa Maid Available • Police Verified • 19+ Years Experience
           </span>
           <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 30px' }}>
-            📞 Call 9971691558 • Live-In Nanny ₹12,999/month • Newborn Care ₹14,999/month • Free 3-Day Trial • North East Nannies • 24-Hour Replacement
+            📞 Call 9910443876 / 8130135822 • Babysitter ₹18,000/month • Nanny ₹22,000/month • Japa Maid Available • Police Verified • 19+ Years Experience
           </span>
           <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 30px' }}>
-            📞 Call 9971691558 • Live-In Nanny ₹12,999/month • Newborn Care ₹14,999/month • Free 3-Day Trial • North East Nannies • 24-Hour Replacement
+            📞 Call 9910443876 / 8130135822 • Babysitter ₹18,000/month • Nanny ₹22,000/month • Japa Maid Available • Police Verified • 19+ Years Experience
           </span>
           <span style={{ fontSize: '13px', fontWeight: 600, display: 'inline-block', padding: '0 30px' }}>
-            📞 Call 9971691558 • Live-In Nanny ₹12,999/month • Newborn Care ₹14,999/month • Free 3-Day Trial • North East Nannies • 24-Hour Replacement
+            📞 Call 9910443876 / 8130135822 • Babysitter ₹18,000/month • Nanny ₹22,000/month • Japa Maid Available • Police Verified • 19+ Years Experience
           </span>
         </div>
       </div>
@@ -53,13 +53,13 @@ export const TopBanner = () => {
           }}
         >
           <span style={{ fontSize: '10px', fontWeight: 600, display: 'inline-block', padding: '0 20px' }}>
-            📞 9971691558 • ₹12,999/mo • ₹14,999/mo • Free Trial • 24hr Service
+            📞 9910443876 / 8130135822 • ₹18,000/mo • ₹22,000/mo • Police Verified • 19+ Years
           </span>
           <span style={{ fontSize: '10px', fontWeight: 600, display: 'inline-block', padding: '0 20px' }}>
-            📞 9971691558 • ₹12,999/mo • ₹14,999/mo • Free Trial • 24hr Service
+            📞 9910443876 / 8130135822 • ₹18,000/mo • ₹22,000/mo • Police Verified • 19+ Years
           </span>
           <span style={{ fontSize: '10px', fontWeight: 600, display: 'inline-block', padding: '0 20px' }}>
-            📞 9971691558 • ₹12,999/mo • ₹14,999/mo • Free Trial • 24hr Service
+            📞 9910443876 / 8130135822 • ₹18,000/mo • ₹22,000/mo • Police Verified • 19+ Years
           </span>
         </div>
       </div>

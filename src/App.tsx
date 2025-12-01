@@ -3,6 +3,7 @@ import { TopBanner } from './components/TopBanner';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { TrustBar } from './components/TrustBar';
+import { FloatingButtons } from './components/FloatingButtons';
 
 // Lazy load components for better performance
 const ServicesGrid = lazy(() => import('./components/ServicesGrid').then(m => ({ default: m.ServicesGrid })));
@@ -13,7 +14,6 @@ const FAQSection = lazy(() => import('./components/FAQSection').then(m => ({ def
 const CTASection = lazy(() => import('./components/CTASection').then(m => ({ default: m.CTASection })));
 const ContactSection = lazy(() => import('./components/ContactSection').then(m => ({ default: m.ContactSection })));
 const Footer = lazy(() => import('./components/Footer').then(m => ({ default: m.Footer })));
-const FloatingButtons = lazy(() => import('./components/FloatingButtons').then(m => ({ default: m.FloatingButtons })));
 const BlogPost = lazy(() => import('./components/BlogPost').then(m => ({ default: m.BlogPost })));
 const BlogList = lazy(() => import('./components/BlogList').then(m => ({ default: m.BlogList })));
 
@@ -48,24 +48,30 @@ function App() {
 
   if (currentPage === 'blog-list') {
     return (
-      <Suspense fallback={<div className="min-h-screen bg-white" />}>
-        <TopBanner />
-        <Navbar />
-        <BlogList />
-        <CTASection />
-        <Footer />
-      </Suspense>
+      <>
+        <Suspense fallback={<div className="min-h-screen bg-white" />}>
+          <TopBanner />
+          <Navbar />
+          <BlogList />
+          <CTASection />
+          <Footer />
+        </Suspense>
+        <FloatingButtons />
+      </>
     );
   }
 
   if (currentPage === 'blog' && blogSlug) {
     return (
-      <Suspense fallback={<div className="min-h-screen bg-white" />}>
-        <TopBanner />
-        <Navbar />
-        <BlogPost slug={blogSlug} onClose={handleCloseBlog} />
-        <Footer />
-      </Suspense>
+      <>
+        <Suspense fallback={<div className="min-h-screen bg-white" />}>
+          <TopBanner />
+          <Navbar />
+          <BlogPost slug={blogSlug} onClose={handleCloseBlog} />
+          <Footer />
+        </Suspense>
+        <FloatingButtons />
+      </>
     );
   }
 
@@ -84,8 +90,8 @@ function App() {
         <CTASection />
         <ContactSection />
         <Footer />
-        <FloatingButtons />
       </Suspense>
+      <FloatingButtons />
     </>
   );
 }

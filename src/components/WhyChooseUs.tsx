@@ -3,14 +3,15 @@ import { useRef } from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const features = [
-  'Background Verified Staff',
-  'Trained in Baby Safety & First Aid',
-  'Live-In 24/7 Support',
-  'North East & Nepali Professionals',
-  'Affordable Pricing',
-  'No Hidden Charges',
-  'Free Trial Period',
-  '24-Hour Replacement Guarantee',
+  'Background Verified Staff (Police + Aadhaar)',
+  'North-East & Nepali Experienced Caregivers',
+  '24-Hour Live-In Support Only',
+  'No Hourly or Part-Time Shifts',
+  'Minimum 3 Replacement Guarantee During Contract',
+  'Up to 2 Paid Leaves Monthly (Prior Intimation)',
+  'Client Provides Food & Accommodation',
+  'More than 19 years of experience',
+  'Transparent pricing & professional coordination',
 ];
 
 export const WhyChooseUs = () => {

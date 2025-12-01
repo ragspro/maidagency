@@ -10,36 +10,36 @@ export const processSteps: ProcessStep[] = [
   {
     id: 'step-1',
     number: 1,
-    title: 'Contact Us',
-    description: 'Call or WhatsApp us with your requirements',
+    title: 'Call or WhatsApp Our Team',
+    description: 'Contact us at 9910443876 or 8130135822',
     icon: '1'
   },
   {
     id: 'step-2',
     number: 2,
-    title: 'Share Requirements',
-    description: 'Tell us about your baby\'s age and care needs',
+    title: 'Share Baby / Care Requirements',
+    description: 'Tell us about your specific care needs',
     icon: '2'
   },
   {
     id: 'step-3',
     number: 3,
-    title: 'Meet Candidates',
-    description: 'Interview verified nannies at your convenience',
+    title: 'Receive Verified Staff Profiles',
+    description: 'Get police-verified caregiver profiles',
     icon: '3'
   },
   {
     id: 'step-4',
     number: 4,
-    title: 'Select & Start',
-    description: 'Choose your preferred nanny and begin care',
+    title: 'Interview & Select Preferred Caregiver',
+    description: 'Meet candidates and choose the best fit',
     icon: '4'
   },
   {
     id: 'step-5',
     number: 5,
-    title: 'Ongoing Support',
-    description: '24/7 support and free replacement if needed',
+    title: 'Care Begins with Ongoing 24×7 Support',
+    description: 'Start care with continuous support from our team',
     icon: '5'
   }
 ];
