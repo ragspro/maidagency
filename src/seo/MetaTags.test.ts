@@ -26,8 +26,8 @@ describe('SEO Meta Tags', () => {
       'og:title': '24/7 Live-In Babysitter, Nanny & Japa Maid Services Delhi NCR',
       'og:description': "Delhi NCR's Most Trusted 24-Hour Baby Care Agency",
       'og:type': 'website',
-      'og:url': 'https://maidagencyindelhi.in',
-      'og:image': 'https://maidagencyindelhi.in/baby-sitter-og.jpg'
+      'og:url': 'https://babysitterdelhi.in',
+      'og:image': 'https://babysitterdelhi.in/baby-sitter-og.jpg'
     };
     
     expect(ogTags['og:title']).toBeTruthy();
@@ -66,7 +66,7 @@ describe('SEO Meta Tags', () => {
       'twitter:card': 'summary_large_image',
       'twitter:title': '24/7 Live-In Babysitter, Nanny & Japa Maid Services Delhi NCR',
       'twitter:description': "Delhi NCR's Most Trusted 24-Hour Baby Care Agency",
-      'twitter:image': 'https://maidagencyindelhi.in/baby-sitter-og.jpg'
+      'twitter:image': 'https://babysitterdelhi.in/baby-sitter-og.jpg'
     };
     
     expect(twitterTags['twitter:card']).toBe('summary_large_image');
@@ -76,9 +76,9 @@ describe('SEO Meta Tags', () => {
   });
 
   it('should have canonical URL', () => {
-    const canonicalUrl = 'https://maidagencyindelhi.in';
+    const canonicalUrl = 'https://babysitterdelhi.in';
     expect(canonicalUrl).toMatch(/^https:\/\//);
-    expect(canonicalUrl).toContain('maidagencyindelhi.in');
+    expect(canonicalUrl).toContain('babysitterdelhi.in');
   });
 
   it('should have robots meta tag', () => {

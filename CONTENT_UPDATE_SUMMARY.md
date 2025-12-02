@@ -12,7 +12,7 @@ All business content has been **REPLACED** as per client requirements while **KE
 - **Primary Phone:** 9910443876
 - **Secondary Phone:** 8130135822
 - **Email:** sewaenterprises2@gmail.com
-- **Website:** maidagencyindelhi.in
+- **Website:** babysitterdelhi.in
 - **Address:** Pillanji, South Extension, Delhi NCR
 
 ### 2. **Hero Section**
@@ -76,7 +76,7 @@ All business content has been **REPLACED** as per client requirements while **KE
 - Updated contact details
 - Updated description
 - Updated copyright (2006-2024)
-- Added website mention: maidagencyindelhi.in
+- Added website mention: babysitterdelhi.in
 
 ---
 
@@ -155,7 +155,7 @@ All business content has been **REPLACED** as per client requirements while **KE
 **Primary Phone:** 9910443876
 **Secondary Phone:** 8130135822
 **Email:** sewaenterprises2@gmail.com
-**Website:** maidagencyindelhi.in
+**Website:** babysitterdelhi.in
 **Address:** Pillanji, South Extension, Delhi NCR
 **Hours:** Open 24 Hours
 

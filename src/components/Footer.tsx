@@ -103,7 +103,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <span>🌐 maidagencyindelhi.in</span>
+                <span>🌐 babysitterdelhi.in</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
