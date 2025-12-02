@@ -1,6 +1,6 @@
 export const TopBanner = () => {
-  const tickerText = "📞 Call 8595661698 / 9971691558 • Babysitter ₹18,000/month • Nanny ₹22,000/month • Japa Maid Available • Police Verified • 19+ Years Experience";
-  const mobileTickerText = "📞 8595661698 / 9971691558 • ₹18,000/mo • ₹22,000/mo • Police Verified • 19+ Years";
+  const tickerText = "📞 Call 9971691558 / 8595661698 • Babysitter ₹18,000/month • Nanny ₹22,000/month • Police Verified • 19+ Years Experience";
+  const mobileTickerText = "📞 9971691558 / 8595661698 • ₹18,000/mo • ₹22,000/mo • Police Verified • 19+ Years";
   
   return (
     <>

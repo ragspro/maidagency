@@ -48,7 +48,7 @@ export const CTASection = () => {
             whileTap={{ scale: 0.95 }}
             className="w-full sm:w-auto px-6 py-2.5 md:px-8 md:py-3 bg-transparent border-2 border-white text-white rounded-full font-medium text-sm md:text-base hover:bg-white hover:text-indigo-600 transition-colors"
           >
-            📞 Call: 8595661698
+            📞 Call: 9971691558
           </motion.a>
           
           <motion.a

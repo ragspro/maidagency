@@ -30,9 +30,9 @@ export const Hero = () => {
             >
               24/7 Live-In Babysitter
               <br />
-              <span className="text-indigo-400">Nanny • Japa Maid</span>
+              <span className="text-indigo-400">& Nanny Services</span>
               <br />
-              Services in Delhi NCR
+              in Delhi NCR
             </motion.h1>
             
             <motion.p
@@ -56,16 +56,16 @@ export const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 className="px-5 py-2.5 md:px-8 md:py-3.5 bg-indigo-600 text-white rounded-full font-medium text-sm md:text-base shadow-xl hover:bg-indigo-700 transition-all inline-flex items-center gap-2"
               >
-                Call Now – 8595661698
+                Call Now – 9971691558
                 <span className="text-base md:text-lg">📞</span>
               </motion.a>
               <motion.a
-                href="tel:9971691558"
+                href="tel:8595661698"
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(99, 102, 241, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
                 className="px-5 py-2.5 md:px-8 md:py-3.5 bg-purple-600 text-white rounded-full font-medium text-sm md:text-base shadow-xl hover:bg-purple-700 transition-all inline-flex items-center gap-2"
               >
-                Call Now – 9971691558
+                Call Now – 8595661698
                 <span className="text-base md:text-lg">📞</span>
               </motion.a>
               <motion.a

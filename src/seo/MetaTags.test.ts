@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('SEO Meta Tags', () => {
   it('should have proper title tag', () => {
-    const expectedTitle = '24/7 Live-In Babysitter, Nanny & Japa Maid Services Delhi NCR';
+    const expectedTitle = '24/7 Live-In Babysitter & Nanny Services Delhi NCR';
     expect(expectedTitle).toContain('Babysitter');
     expect(expectedTitle).toContain('Delhi NCR');
   });

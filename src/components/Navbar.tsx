@@ -147,7 +147,7 @@ export const Navbar = () => {
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors inline-flex items-center gap-2"
             >
-              📞 8595661698
+              📞 9971691558
               <span className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                 →
               </span>
@@ -251,7 +251,7 @@ export const Navbar = () => {
                 href="tel:9971691558"
                 className="px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors text-center mt-2 block"
               >
-                📞 Call 8595661698
+                📞 Call 9971691558
               </a>
             </div>
           </motion.div>
