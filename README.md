@@ -1,14 +1,46 @@
-# Baby Sitter Agency Website
+# Baby Sitter Delhi - Professional Website
 
-Delhi NCR's Most Trusted 24-Hour Baby Care Agency website built with React, TypeScript, and TailwindCSS.
+**Live Website:** [https://www.babysitterdelhi.in](https://www.babysitterdelhi.in)
 
-## 🚀 Quick Start
+## About
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
+Professional baby care and maid placement agency serving Delhi NCR since 2006. Providing 24/7 verified nannies, baby sitters, and domestic help services.
 
-### Installation
+## Contact Information
+
+- **Phone:** 8595661698, 9971691558
+- **WhatsApp:** +91 9971691558
+- **Email:** subhashthapa87@gmail.com
+- **Address:** 2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003
+- **Hours:** Open 24 Hours
+
+## Services
+
+- Babysitter (Ages 1-5 Years)
+- Full-Time Nanny (Ages 3 months-4 Years)
+- Japa Maid - Post-Delivery Care
+- Elder & Patient Care Attendant
+- Cook & Domestic Helper
+- Emergency Replacement Support
+
+## Technology Stack
+
+- **Framework:** React 18 + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Hosting:** Vercel
+- **Performance:** < 1 second load time
+
+## Documentation
+
+Professional documentation available in `/docs` folder:
+
+- **SEO Audit Report** - Comprehensive SEO analysis (86/100 score)
+- **Google Ranking Guide** - Step-by-step SEO implementation guide
+- **Project Documentation** - Technical details
+
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -22,202 +54,32 @@ npm run build
 
 # Preview production build
 npm run preview
-
-# Run tests
-npm run test
-
-# Run tests with UI
-npm run test:ui
 ```
 
-## 📁 Project Structure
+## Features
 
-```
-src/
-├── components/        # React components
-├── data/             # Static data (services, testimonials, FAQs)
-├── hooks/            # Custom React hooks
-├── utils/            # Utility functions
-├── test/             # Test setup files
-├── App.tsx           # Main app component
-└── main.tsx          # Entry point
-```
+✅ Mobile-responsive design  
+✅ SEO optimized (100+ keywords)  
+✅ Fast loading (< 1s)  
+✅ Schema markup (7 types)  
+✅ WhatsApp integration  
+✅ Google Maps integration  
+✅ Blog system  
+✅ Service modals  
+✅ Contact forms  
 
-## 🔧 Configuration
+## SEO Performance
 
-### EmailJS Setup
+- **Overall Score:** 86/100
+- **Technical SEO:** 95/100
+- **On-Page SEO:** 98/100
+- **Mobile Optimization:** 100/100
+- **Page Speed:** 98/100
 
-1. Create an account at [EmailJS](https://www.emailjs.com/)
-2. Create a new email service
-3. Create an email template
-4. Update `src/utils/emailService.ts` with your credentials:
+## License
 
-```typescript
-const SERVICE_ID = 'your_service_id';
-const TEMPLATE_ID = 'your_template_id';
-const PUBLIC_KEY = 'your_public_key';
-```
+© 2006-2024 Maid Placement Agency Baby Sitter. All rights reserved.
 
-### Environment Variables
+## Developer
 
-Create a `.env` file in the root directory:
-
-```env
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
-
-## 📝 Content Management
-
-### Updating Services
-
-Edit `src/data/services.ts`:
-
-```typescript
-export const services: Service[] = [
-  {
-    id: 'unique-id',
-    icon: 'icon-name',
-    title: 'Service Title',
-    description: 'Service description',
-    priceRange: '₹18,000 – ₹22,000 per month',
-    // ... other fields
-  },
-];
-```
-
-### Updating Testimonials
-
-Edit `src/data/testimonials.ts`:
-
-```typescript
-export const testimonials: Testimonial[] = [
-  {
-    id: 'testimonial-1',
-    name: 'Customer Name',
-    location: 'Location',
-    rating: 5,
-    review: 'Review text',
-    photo: 'https://image-url.com/photo.jpg'
-  },
-];
-```
-
-### Updating FAQs
-
-Edit `src/data/faqs.ts`:
-
-```typescript
-export const faqs: FAQItem[] = [
-  {
-    id: 'faq-1',
-    question: 'Your question?',
-    answer: 'Your answer'
-  },
-];
-```
-
-### Updating Contact Details
-
-Update contact information in:
-- `src/components/Footer.tsx` - Footer contact section
-- `src/components/FloatingButtons.tsx` - WhatsApp and Call buttons
-- `src/components/Hero.tsx` - Hero CTA buttons
-- `index.html` - Meta tags and Schema.org data
-
-## 🧪 Testing
-
-### Run All Tests
-```bash
-npm run test
-```
-
-### Run Tests with UI
-```bash
-npm run test:ui
-```
-
-### Run Tests Once
-```bash
-npm run test:run
-```
-
-## 🚀 Deployment
-
-### Deploy to Vercel
-
-1. Push your code to GitHub
-2. Import project in [Vercel](https://vercel.com)
-3. Configure build settings:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-4. Add environment variables in Vercel dashboard
-5. Deploy!
-
-### Manual Deployment
-
-```bash
-# Build the project
-npm run build
-
-# The dist/ folder contains production-ready files
-# Upload to your hosting provider
-```
-
-## 🎨 Customization
-
-### Colors
-
-Edit `tailwind.config.js` to customize colors:
-
-```javascript
-theme: {
-  extend: {
-    colors: {
-      primary: '#4A90E2',
-      secondary: '#FFB6B9',
-      accent: '#F4C430',
-    }
-  }
-}
-```
-
-### Fonts
-
-Update fonts in `src/index.css` or `index.html`.
-
-## 📱 Features
-
-- ✅ Responsive design (mobile, tablet, desktop)
-- ✅ Smooth scrolling with Lenis.js
-- ✅ Animations with Framer Motion
-- ✅ Contact form with EmailJS integration
-- ✅ SEO optimized with meta tags and Schema.org
-- ✅ Lazy loading images
-- ✅ Testimonial carousel
-- ✅ FAQ accordion
-- ✅ Service modals
-- ✅ Blog system
-- ✅ Review submission form
-- ✅ WhatsApp & Call floating buttons
-
-## 🛠️ Tech Stack
-
-- **Framework**: React 19 + TypeScript
-- **Build Tool**: Vite
-- **Styling**: TailwindCSS
-- **Animations**: Framer Motion, GSAP, Lenis.js
-- **Form Handling**: EmailJS
-- **Testing**: Vitest, React Testing Library, fast-check
-- **Deployment**: Vercel
-
-## 📞 Support
-
-For issues or questions:
-- Email: sewaenterprises2@gmail.com
-- Phone: +91-8595661698, +91-9971691558
-
-## 📄 License
-
-Copyright © 2024 Maid Placement Agency Baby Sitter. All rights reserved.
+Developed by [RAGSPRO](https://ragspro.com)
