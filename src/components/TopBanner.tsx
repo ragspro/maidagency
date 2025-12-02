@@ -138,43 +138,49 @@ export const TopBanner = () => {
           }
         }
         
-        /* iOS Safari specific fixes */
+        /* iOS Safari specific fixes - ONLY FOR iOS */
         @supports (-webkit-touch-callout: none) {
           @media (max-width: 767px) {
             .block.md\\:hidden {
-              height: 32px !important;
-              line-height: 32px !important;
+              height: 36px !important;
+              line-height: 36px !important;
+              padding: 2px 0 !important;
             }
             
             .ticker-wrapper-mobile {
-              height: 32px !important;
+              height: 36px !important;
               align-items: center !important;
             }
             
             .ticker-wrapper-mobile span {
-              font-size: 10px !important;
-              line-height: 1 !important;
-              padding: 0 20px !important;
+              font-size: 9px !important;
+              line-height: 1.2 !important;
+              padding: 0 25px !important;
               vertical-align: middle !important;
               transform: translateZ(0) !important;
               -webkit-transform: translateZ(0) !important;
+              font-weight: 500 !important;
+              letter-spacing: 0.3px !important;
             }
           }
           
-          /* iPhone SE and smaller */
+          /* iPhone SE and smaller - iOS only */
           @media (max-width: 375px) {
             .block.md\\:hidden {
-              height: 30px !important;
-              line-height: 30px !important;
+              height: 34px !important;
+              line-height: 34px !important;
+              padding: 2px 0 !important;
             }
             
             .ticker-wrapper-mobile {
-              height: 30px !important;
+              height: 34px !important;
             }
             
             .ticker-wrapper-mobile span {
-              font-size: 9px !important;
-              padding: 0 15px !important;
+              font-size: 8px !important;
+              padding: 0 20px !important;
+              line-height: 1.2 !important;
+              letter-spacing: 0.2px !important;
             }
           }
         }
