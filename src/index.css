@@ -479,19 +479,14 @@ img[loading="lazy"].loaded {
   }
 }
 
-/* Hardware acceleration for smooth animations */
+/* Hardware acceleration for smooth animations - REMOVED transform to allow fixed positioning */
 .hero-section,
 .services-section,
 .testimonials-section,
 .cta-section,
 section {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  will-change: transform;
   contain: layout style paint;
 }
 
@@ -548,15 +543,6 @@ img[loading="lazy"]:not([src]) {
     overscroll-behavior-y: contain;
   }
   
-  /* Optimize scroll performance on mobile */
-  * {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    /* Improve scroll performance */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
   /* Disable Lenis on mobile */
   html.lenis {
     height: auto !important;
@@ -585,9 +571,9 @@ img[loading="lazy"]:not([src]) {
   }
 }
 
-/* Floating Buttons - Force visibility on all devices */
-.floating-button-whatsapp,
-.floating-button-phone {
+/* Floating Buttons - CRITICAL: Force fixed positioning on ALL devices */
+.floating-whatsapp-btn,
+.floating-phone-btn {
   position: fixed !important;
   z-index: 999999 !important;
   display: flex !important;
@@ -599,72 +585,106 @@ img[loading="lazy"]:not([src]) {
   -webkit-transform: translateZ(0) !important;
   transform: translateZ(0) !important;
   will-change: transform !important;
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
-  .floating-button-whatsapp {
+  .floating-whatsapp-btn {
     position: fixed !important;
     bottom: 24px !important;
     right: 24px !important;
-    width: 64px !important;
-    height: 64px !important;
-    background-color: #25D366 !important;
-    border-radius: 50% !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
     transition: transform 0.2s ease !important;
   }
   
-  .floating-button-whatsapp:hover {
-    transform: scale(1.1) !important;
+  .floating-whatsapp-btn:hover {
+    transform: scale(1.1) translateZ(0) !important;
+    -webkit-transform: scale(1.1) translateZ(0) !important;
   }
   
-  .floating-button-phone {
+  .floating-phone-btn {
     position: fixed !important;
     bottom: 24px !important;
     left: 24px !important;
-    width: 64px !important;
-    height: 64px !important;
-    background-color: #4F46E5 !important;
-    border-radius: 50% !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
     transition: transform 0.2s ease !important;
   }
   
-  .floating-button-phone:hover {
-    transform: scale(1.1) !important;
+  .floating-phone-btn:hover {
+    transform: scale(1.1) translateZ(0) !important;
+    -webkit-transform: scale(1.1) translateZ(0) !important;
   }
 }
 
-/* Mobile specific - ensure buttons are always visible */
-@media (max-width: 768px) {
-  .floating-button-whatsapp {
+/* Tablet/iPad specific - FORCE fixed positioning */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .floating-whatsapp-btn {
     position: fixed !important;
-    bottom: 16px !important;
-    right: 16px !important;
+    bottom: 20px !important;
+    right: 20px !important;
     width: 56px !important;
     height: 56px !important;
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
     z-index: 999999 !important;
-    background-color: #25D366 !important;
-    border-radius: 50% !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
   }
   
-  .floating-button-phone {
+  .floating-phone-btn {
     position: fixed !important;
-    bottom: 16px !important;
-    left: 16px !important;
+    bottom: 20px !important;
+    left: 20px !important;
     width: 56px !important;
     height: 56px !important;
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
     z-index: 999999 !important;
-    background-color: #4F46E5 !important;
-    border-radius: 50% !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
   }
+}
+
+/* Mobile specific - FORCE fixed positioning with maximum specificity */
+@media (max-width: 768px) {
+  .floating-whatsapp-btn {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 56px !important;
+    height: 56px !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999 !important;
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+  }
+  
+  .floating-phone-btn {
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    width: 56px !important;
+    height: 56px !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999 !important;
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+  }
+}
+
+/* Allow floating buttons to have transforms for hardware acceleration */
+.floating-whatsapp-btn,
+.floating-phone-btn {
+  transform: translateZ(0) !important;
+  -webkit-transform: translateZ(0) !important;
 }
