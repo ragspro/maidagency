@@ -45,10 +45,11 @@ export const TopBanner = () => {
       <div
         className="block md:hidden fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 text-white"
         style={{ 
-          height: '30px',
+          height: '32px',
           display: 'flex',
           alignItems: 'center',
           overflow: 'hidden',
+          WebkitOverflowScrolling: 'touch',
         }}
       >
         <div 
@@ -57,6 +58,8 @@ export const TopBanner = () => {
             display: 'flex',
             whiteSpace: 'nowrap',
             animation: 'scroll-mobile 20s linear infinite',
+            alignItems: 'center',
+            height: '100%',
           }}
         >
           {/* Repeat text 6 times for seamless loop */}
@@ -69,7 +72,10 @@ export const TopBanner = () => {
                 padding: '0 20px',
                 whiteSpace: 'nowrap',
                 display: 'inline-block',
-                lineHeight: '30px',
+                lineHeight: '1',
+                verticalAlign: 'middle',
+                WebkitFontSmoothing: 'antialiased',
+                MozOsxFontSmoothing: 'grayscale',
               }}
             >
               {mobileTickerText}
@@ -107,36 +113,81 @@ export const TopBanner = () => {
         /* Mobile specific - force single line */
         @media (max-width: 767px) {
           .block.md\\:hidden {
-            height: 30px !important;
+            height: 32px !important;
             display: flex !important;
             align-items: center !important;
             overflow: hidden !important;
+            -webkit-overflow-scrolling: touch !important;
           }
           
           .ticker-wrapper-mobile {
             display: flex !important;
             white-space: nowrap !important;
+            align-items: center !important;
           }
           
           .ticker-wrapper-mobile span {
             font-size: 10px !important;
             padding: 0 20px !important;
             white-space: nowrap !important;
-            line-height: 30px !important;
+            line-height: 1 !important;
             display: inline-block !important;
+            vertical-align: middle !important;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
           }
         }
         
-        /* Extra small screens */
+        /* iOS Safari specific fixes */
+        @supports (-webkit-touch-callout: none) {
+          @media (max-width: 767px) {
+            .block.md\\:hidden {
+              height: 32px !important;
+              line-height: 32px !important;
+            }
+            
+            .ticker-wrapper-mobile {
+              height: 32px !important;
+              align-items: center !important;
+            }
+            
+            .ticker-wrapper-mobile span {
+              font-size: 10px !important;
+              line-height: 1 !important;
+              padding: 0 20px !important;
+              vertical-align: middle !important;
+              transform: translateZ(0) !important;
+              -webkit-transform: translateZ(0) !important;
+            }
+          }
+          
+          /* iPhone SE and smaller */
+          @media (max-width: 375px) {
+            .block.md\\:hidden {
+              height: 30px !important;
+              line-height: 30px !important;
+            }
+            
+            .ticker-wrapper-mobile {
+              height: 30px !important;
+            }
+            
+            .ticker-wrapper-mobile span {
+              font-size: 9px !important;
+              padding: 0 15px !important;
+            }
+          }
+        }
+        
+        /* Extra small screens (non-iOS) */
         @media (max-width: 375px) {
           .block.md\\:hidden {
-            height: 28px !important;
+            height: 30px !important;
           }
           
           .ticker-wrapper-mobile span {
             font-size: 9px !important;
             padding: 0 15px !important;
-            line-height: 28px !important;
           }
         }
       `}</style>
