@@ -24,10 +24,10 @@
 
 ### Homepage Meta Tags
 ✅ **Title Tag** (130 characters)  
-`Baby Sitter Delhi | 24/7 Nanny for Baby | Maid Agency Near Me | Urgent Contact: 8595661698, 9971691558 | babysitterdelhi.in`
+`Baby Sitter Delhi | 24/7 Nanny for Baby | Maid Agency Near Me | Urgent Contact: 9971691558, 8595661698 | babysitterdelhi.in`
 
 ✅ **Meta Description** (320 characters)  
-`🏆 #1 Baby Sitter in Delhi NCR | 24 Hours Nanny for Baby | Urgent Baby Care Job Contact: 8595661698, 9971691558 | Maid Agency Near Me | English Speaking Nanny Delhi | Full-Time Baby Care Taker at Home | 12 Hours Maid Service | 24 Hour Maid Agency | Best Maid Service in Delhi | मैड सेवा केंद्र नई दिल्ली | 19+ Years Experience | 5000+ Happy Families`
+`🏆 #1 Baby Sitter in Delhi NCR | 24 Hours Nanny for Baby | Urgent Baby Care Job Contact: 9971691558, 8595661698 | Maid Agency Near Me | English Speaking Nanny Delhi | Full-Time Baby Care Taker at Home | 12 Hours Maid Service | 24 Hour Maid Agency | Best Maid Service in Delhi | मैड सेवा केंद्र नई दिल्ली | 19+ Years Experience | 5000+ Happy Families`
 
 ✅ **Keywords** (100+ keywords)  
 Primary: baby sitter delhi, nanny for baby, maid agency near me, babysitter delhi, baby care taker
@@ -386,7 +386,7 @@ The website **babysitterdelhi.in** has an **excellent technical and on-page SEO 
 ## CONTACT FOR IMPLEMENTATION
 
 **Website:** https://www.babysitterdelhi.in  
-**Phone:** 8595661698, 9971691558  
+**Phone:** 9971691558, 8595661698  
 **Email:** subhashthapa87@gmail.com  
 **Address:** 2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003
 

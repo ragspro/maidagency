@@ -33,14 +33,14 @@ describe('Link Format Properties', () => {
    */
   it('should have valid tel: link format', () => {
     const TestCallButton = () => (
-      <a href="tel:8595661698">Call Now</a>
+      <a href="tel:9971691558">Call Now</a>
     );
     
     render(<TestCallButton />);
     const link = screen.getByRole('link');
     
     const href = link.getAttribute('href');
-    expect(href).toBe('tel:8595661698');
+    expect(href).toBe('tel:9971691558');
     expect(href).toMatch(/^tel:\d+$/);
   });
 

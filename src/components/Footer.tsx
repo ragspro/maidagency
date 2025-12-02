@@ -85,7 +85,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <a href="tel:8595661698" className="hover:text-white transition-colors">
+                <a href="tel:9971691558" className="hover:text-white transition-colors">
                   8595661698
                 </a>
               </li>

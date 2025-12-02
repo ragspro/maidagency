@@ -136,7 +136,7 @@ export const BlogPost = ({ slug, onClose }: BlogPostProps) => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="tel:+918595661698"
+              href="tel:+919971691558"
               className="px-8 py-3.5 bg-white text-indigo-600 rounded-full font-medium hover:bg-gray-100 transition-colors inline-flex items-center gap-2"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

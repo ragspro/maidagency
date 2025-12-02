@@ -220,7 +220,7 @@ export const AboutUs = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="tel:8595661698"
+              href="tel:9971691558"
               className="px-8 py-3.5 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors inline-flex items-center gap-2 shadow-lg"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

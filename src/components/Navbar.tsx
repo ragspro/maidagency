@@ -142,7 +142,7 @@ export const Navbar = () => {
           {/* Contact Button */}
           <div className="hidden lg:block">
             <motion.a
-              href="tel:8595661698"
+              href="tel:9971691558"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors inline-flex items-center gap-2"
@@ -248,7 +248,7 @@ export const Navbar = () => {
                 Contact
               </button>
               <a
-                href="tel:8595661698"
+                href="tel:9971691558"
                 className="px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors text-center mt-2 block"
               >
                 📞 Call 8595661698

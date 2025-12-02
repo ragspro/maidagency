@@ -34,6 +34,6 @@ describe('Hero Component', () => {
     render(<Hero />);
     
     const callButton = screen.getByRole('link', { name: /8595661698/i });
-    expect(callButton).toHaveAttribute('href', 'tel:8595661698');
+    expect(callButton).toHaveAttribute('href', 'tel:9971691558');
   });
 });

@@ -49,7 +49,7 @@ export const FloatingButtons = () => {
 
       {/* Phone Button */}
       <a
-        href="tel:8595661698"
+        href="tel:9971691558"
         aria-label="Call us"
         className="floating-phone-btn"
         style={{

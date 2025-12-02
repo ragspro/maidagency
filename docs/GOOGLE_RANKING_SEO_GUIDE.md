@@ -61,7 +61,7 @@ Rank #1 on Google Search, Google Maps, ChatGPT, and Gemini for keywords:
    - Add business name: "Maid Placement Agency Baby Sitter" or "Baby Sitter Delhi"
    - Category: "Baby Sitter", "Nanny Agency", "Maid Service"
    - Address: 2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003
-   - Phone: 8595661698, 9971691558
+   - Phone: 9971691558, 8595661698
    - Website: https://www.babysitterdelhi.in
    - Hours: Open 24 Hours
 
@@ -111,7 +111,7 @@ Rank #1 on Google Search, Google Maps, ChatGPT, and Gemini for keywords:
 **Ensure NAP Consistency:**
 - Name: Maid Placement Agency Baby Sitter
 - Address: 2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003
-- Phone: 8595661698, 9971691558
+- Phone: 9971691558, 8595661698
 
 ### Step 4: Backlinks Strategy
 **Get quality backlinks from:**
@@ -220,7 +220,7 @@ Rank #1 on Google Search, Google Maps, ChatGPT, and Gemini for keywords:
 
 **Business Name:** Maid Placement Agency Baby Sitter
 **Website:** https://www.babysitterdelhi.in
-**Phone:** 8595661698, 9971691558
+**Phone:** 9971691558, 8595661698
 **WhatsApp:** +919971691558
 **Email:** subhashthapa87@gmail.com
 **Address:** 2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003

@@ -42,7 +42,7 @@ describe('SEO Meta Tags', () => {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       name: 'Maid Placement Agency Baby Sitter',
-      telephone: '+918595661698',
+      telephone: '+919971691558',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Pillanji, South Extension Part 1',

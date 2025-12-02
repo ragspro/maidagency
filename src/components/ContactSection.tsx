@@ -58,7 +58,7 @@ export const ContactSection = () => {
               <p className="text-sm text-gray-600 text-center mb-4">Or call us directly:</p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:8595661698"
+                  href="tel:9971691558"
                   className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -112,7 +112,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm md:text-base">Phone</p>
-                    <a href="tel:8595661698" className="text-indigo-600 hover:underline text-xs md:text-sm block">
+                    <a href="tel:9971691558" className="text-indigo-600 hover:underline text-xs md:text-sm block">
                       8595661698
                     </a>
                     <a href="tel:9971691558" className="text-indigo-600 hover:underline text-xs md:text-sm block">

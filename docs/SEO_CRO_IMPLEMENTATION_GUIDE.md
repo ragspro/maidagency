@@ -208,7 +208,7 @@ What you see is what you pay. No joining fees, no hidden charges, no surprises.
   "provider": {
     "@type": "LocalBusiness",
     "name": "Baby Sitter Delhi",
-    "telephone": "+91-8595661698",
+    "telephone": "+91-9971691558",
     "priceRange": "₹₹"
   },
   "areaServed": [
@@ -719,7 +719,7 @@ gtag('event', 'service_modal_open', {
 
 **Questions?**
 - Email: subhashthapa87@gmail.com
-- Phone: 8595661698, 9971691558
+- Phone: 9971691558, 8595661698
 
 ---
 

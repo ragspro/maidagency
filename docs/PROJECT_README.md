@@ -216,7 +216,7 @@ Update fonts in `src/index.css` or `index.html`.
 
 For issues or questions:
 - Email: sewaenterprises2@gmail.com
-- Phone: +91-8595661698, +91-9971691558
+- Phone: +91-9971691558, +91-9971691558
 
 ## 📄 License
 

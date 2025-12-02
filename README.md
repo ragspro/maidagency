@@ -8,7 +8,7 @@ Professional baby care and maid placement agency serving Delhi NCR since 2006. P
 
 ## Contact Information
 
-- **Phone:** 8595661698, 9971691558
+- **Phone:** 9971691558, 8595661698
 - **WhatsApp:** +91 9971691558
 - **Email:** subhashthapa87@gmail.com
 - **Address:** 2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003

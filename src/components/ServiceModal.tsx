@@ -138,7 +138,7 @@ export const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) =>
                       WhatsApp Us
                     </a>
                     <a
-                      href="tel:+918595661698"
+                      href="tel:+919971691558"
                       className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-4 sm:px-6 rounded-lg transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
                     >
                       <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">

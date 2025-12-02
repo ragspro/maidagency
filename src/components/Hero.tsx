@@ -51,7 +51,7 @@ export const Hero = () => {
               className="flex flex-wrap gap-3 md:gap-4 mb-5 md:mb-8"
             >
               <motion.a
-                href="tel:8595661698"
+                href="tel:9971691558"
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(99, 102, 241, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
                 className="px-5 py-2.5 md:px-8 md:py-3.5 bg-indigo-600 text-white rounded-full font-medium text-sm md:text-base shadow-xl hover:bg-indigo-700 transition-all inline-flex items-center gap-2"
