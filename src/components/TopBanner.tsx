@@ -142,45 +142,47 @@ export const TopBanner = () => {
         @supports (-webkit-touch-callout: none) {
           @media (max-width: 767px) {
             .block.md\\:hidden {
-              height: 36px !important;
-              line-height: 36px !important;
-              padding: 2px 0 !important;
+              height: 40px !important;
+              line-height: 40px !important;
+              padding: 4px 0 !important;
             }
             
             .ticker-wrapper-mobile {
-              height: 36px !important;
+              height: 40px !important;
               align-items: center !important;
             }
             
             .ticker-wrapper-mobile span {
-              font-size: 9px !important;
-              line-height: 1.2 !important;
-              padding: 0 25px !important;
+              font-size: 8px !important;
+              line-height: 1.3 !important;
+              padding: 0 30px !important;
               vertical-align: middle !important;
               transform: translateZ(0) !important;
               -webkit-transform: translateZ(0) !important;
               font-weight: 500 !important;
-              letter-spacing: 0.3px !important;
+              letter-spacing: 0.5px !important;
+              word-spacing: 1px !important;
             }
           }
           
           /* iPhone SE and smaller - iOS only */
           @media (max-width: 375px) {
             .block.md\\:hidden {
-              height: 34px !important;
-              line-height: 34px !important;
-              padding: 2px 0 !important;
+              height: 38px !important;
+              line-height: 38px !important;
+              padding: 3px 0 !important;
             }
             
             .ticker-wrapper-mobile {
-              height: 34px !important;
+              height: 38px !important;
             }
             
             .ticker-wrapper-mobile span {
-              font-size: 8px !important;
-              padding: 0 20px !important;
-              line-height: 1.2 !important;
-              letter-spacing: 0.2px !important;
+              font-size: 7px !important;
+              padding: 0 25px !important;
+              line-height: 1.3 !important;
+              letter-spacing: 0.4px !important;
+              word-spacing: 1px !important;
             }
           }
         }
