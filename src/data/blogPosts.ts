@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'toddler-care-nanny-1-3-years-delhi-ncr',
     title: 'Toddler Care Nanny (1-3 Years) Services in Delhi NCR',
     excerpt: 'Expert toddler care nannies for 1-3 year olds. Meal prep, potty training, early learning activities, and developmental support.',
-    metaTitle: 'Toddler Care Nanny Delhi NCR | 1-3 Years | RagsPro | ₹16,000/month',
+    metaTitle: 'Toddler Care Nanny Delhi NCR | 1-3 Years | ₹16,000/month',
     metaDescription: 'Hire experienced toddler care nannies in Delhi NCR for 1-3 year olds. Potty training, meal prep, early learning, playtime activities. Verified professionals. Call 9971691558',
     keywords: [
       'toddler nanny Delhi',
@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
       'toddler nanny Gurgaon',
       'preschool age care'
     ],
-    author: 'RagsPro Baby Care Team',
+    author: 'Baby Care Team',
     date: '2024-01-25',
     readTime: '5 min read',
     category: 'Toddler Care',
@@ -78,7 +78,7 @@ Toddlers (1-3 years) have unique needs:
 - **Boundary Setting**: Age-appropriate limits
 - **Emotional Support**: Understanding toddler emotions
 
-## Why Choose RagsPro Toddler Nannies?
+## Why Choose Toddler Nannies?
 
 ### 1. Toddler Specialists
 - Experienced with 1-3 year age group
@@ -203,7 +203,7 @@ Available 24/7!
     slug: 'north-east-trained-nannies-delhi-ncr',
     title: 'North East Trained Nannies in Delhi NCR - Professional & Trusted',
     excerpt: 'Hire polite, professional North East nannies. English/Hindi speaking, well-trained, trusted by 1000s of families across Delhi NCR.',
-    metaTitle: 'North East Nannies Delhi NCR | Professional Baby Care | RagsPro',
+    metaTitle: 'North East Nannies Delhi NCR | Professional Baby Care',
     metaDescription: 'Hire verified North East nannies in Delhi NCR. Polite, English/Hindi speaking, professionally trained. Trusted by 1000+ families. Background verified. Call 9971691558',
     keywords: [
       'North East nanny Delhi',
@@ -216,7 +216,7 @@ Available 24/7!
       'Assamese nanny',
       'polite nanny Delhi'
     ],
-    author: 'RagsPro Baby Care Team',
+    author: 'Baby Care Team',
     date: '2024-01-28',
     readTime: '5 min read',
     category: 'Nanny Services',
@@ -276,7 +276,7 @@ Looking for professional, polite, and trustworthy nannies? Our **North East Trai
 - Accompanying to doctor visits
 - Park and outdoor activities
 
-## Why Choose RagsPro North East Nannies?
+## Why Choose North East Nannies?
 
 ### 1. Thoroughly Verified
 Every nanny undergoes:
@@ -398,7 +398,7 @@ Call/WhatsApp: **9971691558**
 
 > "Clean, organized, and excellent with our newborn. Her English is great, communication is easy." - **Rajesh Kumar, Noida**
 
-> "We've had her for 2 years now. She's like family. Highly recommend RagsPro!" - **Sneha Verma, Gurgaon**
+> "We've had her for 2 years now. She's like family. Highly recommend Our service!" - **Sneha Verma, Gurgaon**
 
 ## Frequently Asked Questions
 
@@ -433,7 +433,7 @@ Available 24/7!
     slug: '24-hour-emergency-nanny-replacement-delhi-ncr',
     title: '24-Hour Emergency Nanny Replacement Service in Delhi NCR',
     excerpt: 'Fast nanny replacement within 24 hours if you\'re not satisfied. No questions asked, hassle-free service across Delhi NCR.',
-    metaTitle: '24-Hour Nanny Replacement Delhi NCR | Emergency Service | RagsPro',
+    metaTitle: '24-Hour Nanny Replacement Delhi NCR | Emergency Service',
     metaDescription: 'Need urgent nanny replacement? Get verified nanny within 24 hours in Delhi NCR. No questions asked, hassle-free. Emergency service available 24/7. Call 9971691558',
     keywords: [
       'emergency nanny replacement',
@@ -445,7 +445,7 @@ Available 24/7!
       'urgent baby care',
       'nanny replacement service'
     ],
-    author: 'RagsPro Baby Care Team',
+    author: 'Baby Care Team',
     date: '2024-02-01',
     readTime: '4 min read',
     category: 'Emergency Services',
@@ -518,7 +518,7 @@ Our emergency replacement service provides:
 - Ongoing support
 - Future replacements free
 
-## Why Choose RagsPro Emergency Service?
+## Why Choose Emergency Service?
 
 ### 1. Fastest Response
 - 24/7 helpline active
@@ -592,9 +592,9 @@ Our emergency replacement service provides:
 
 ## Success Stories
 
-> "Our nanny quit suddenly at 11 PM. Called RagsPro, and by next morning we had a new nanny! Lifesaver!" - **Anjali Mehta, Noida**
+> "Our nanny quit suddenly at 11 PM. Called us, and by next morning we had a new nanny! Lifesaver!" - **Anjali Mehta, Noida**
 
-> "Not satisfied with previous nanny. One call to RagsPro, and within 24 hours we had a much better replacement. No hassle!" - **Vikram Singh, Gurgaon**
+> "Not satisfied with previous nanny. One call to us, and within 24 hours we had a much better replacement. No hassle!" - **Vikram Singh, Gurgaon**
 
 > "Emergency service is amazing! They understand urgency and deliver fast. Highly recommend!" - **Pooja Sharma, South Delhi**
 
@@ -670,7 +670,7 @@ Don't stress about nanny problems. We're here to help!
     slug: 'mother-baby-care-package-postpartum-delhi-ncr',
     title: 'Mother & Baby Care Package - Post-Delivery Support in Delhi NCR',
     excerpt: 'Complete post-delivery support for mother recovery and baby care. Expert care for both mom and newborn in Delhi NCR.',
-    metaTitle: 'Mother Baby Care Package Delhi NCR | Postpartum Support | RagsPro',
+    metaTitle: 'Mother Baby Care Package Delhi NCR | Postpartum Support',
     metaDescription: 'Post-delivery care for mother and baby in Delhi NCR. Expert support for recovery, breastfeeding, newborn care. Trained professionals. Call 9971691558',
     keywords: [
       'mother baby care Delhi',
@@ -682,7 +682,7 @@ Don't stress about nanny problems. We're here to help!
       'mother recovery support',
       'breastfeeding support Delhi'
     ],
-    author: 'RagsPro Baby Care Team',
+    author: 'Baby Care Team',
     date: '2024-02-05',
     readTime: '6 min read',
     category: 'Maternity Care',
@@ -939,7 +939,7 @@ Available 24/7 for consultations!
     slug: '24-hour-live-in-baby-sitter-delhi-ncr',
     title: '24-Hour Live-In Baby Sitter Services in Delhi NCR',
     excerpt: 'Professional round-the-clock baby care with experienced nannies. Get dedicated live-in baby sitters for complete peace of mind.',
-    metaTitle: '24-Hour Live-In Baby Sitter Delhi NCR | RagsPro Baby Care | ₹15,000/month',
+    metaTitle: '24-Hour Live-In Baby Sitter Delhi NCR | Baby Care | ₹15,000/month',
     metaDescription: 'Hire verified 24-hour live-in baby sitters in Delhi NCR. Background checked, trained nannies for newborn to toddler care. Free trial, 24-hour replacement. Call 9971691558',
     keywords: [
       '24 hour baby sitter Delhi',
@@ -952,7 +952,7 @@ Available 24/7 for consultations!
       'affordable baby care',
       'verified nanny Delhi'
     ],
-    author: 'RagsPro Baby Care Team',
+    author: 'Baby Care Team',
     date: '2024-01-15',
     readTime: '5 min read',
     category: 'Baby Care Services',
@@ -960,7 +960,7 @@ Available 24/7 for consultations!
     content: `
 # 24-Hour Live-In Baby Sitter Services in Delhi NCR
 
-Finding reliable, trustworthy baby care is every parent's top priority. At RagsPro Baby Care, we provide **24-hour live-in baby sitter services** across Delhi NCR with verified, trained professionals.
+Finding reliable, trustworthy baby care is every parent's top priority. At Baby Care, we provide **24-hour live-in baby sitter services** across Delhi NCR with verified, trained professionals.
 
 ## What is a Live-In Baby Sitter?
 
@@ -994,7 +994,7 @@ A live-in baby sitter stays at your home 24/7, providing round-the-clock care fo
 - Hygiene maintenance
 - Safe sleep practices
 
-## Why Choose RagsPro Live-In Baby Sitters?
+## Why Choose Live-In Baby Sitters?
 
 ### 1. Background Verified
 Every nanny undergoes:
@@ -1081,7 +1081,7 @@ Free replacement anytime
 
 ## What Parents Say
 
-> "Our live-in nanny from RagsPro is amazing! She handles our 6-month-old with so much care. Night feeds are no longer stressful." - **Priya Sharma, Noida**
+> "Our live-in nanny from is amazing! She handles our 6-month-old with so much care. Night feeds are no longer stressful." - **Priya Sharma, Noida**
 
 > "Best decision we made. The nanny is professional, clean, and our baby loves her. Highly recommend!" - **Rahul Verma, Gurgaon**
 
@@ -1101,7 +1101,7 @@ A: Yes, nanny stays at your home in a separate room.
 
 ## Book Your Live-In Baby Sitter Today
 
-Don't compromise on your baby's care. Get a verified, trained live-in baby sitter from RagsPro.
+Don't compromise on your baby's care. Get a verified, trained live-in baby sitter from us.
 
 **Call Now: 9971691558**
 **WhatsApp: +919971691558**
@@ -1118,7 +1118,7 @@ Available 24/7 for emergency placements!
     slug: 'newborn-care-specialist-delhi-ncr',
     title: 'Newborn Care Specialist (0-12 months) in Delhi NCR',
     excerpt: 'Expert newborn care specialists for babies 0-12 months. Trained in infant handling, feeding, hygiene, and mother support.',
-    metaTitle: 'Newborn Care Specialist Delhi NCR | Expert Baby Nurse | RagsPro ₹18,000',
+    metaTitle: 'Newborn Care Specialist Delhi NCR | Expert Baby Nurse | ₹18,000',
     metaDescription: 'Hire certified newborn care specialists in Delhi NCR. Expert in 0-12 month baby care, night feeds, hygiene, mother support. Verified, trained professionals. Call 9971691558',
     keywords: [
       'newborn care specialist Delhi',
@@ -1131,7 +1131,7 @@ Available 24/7 for emergency placements!
       'newborn specialist Noida',
       'baby care expert Gurgaon'
     ],
-    author: 'RagsPro Baby Care Team',
+    author: 'Baby Care Team',
     date: '2024-01-20',
     readTime: '6 min read',
     category: 'Newborn Care',
@@ -1188,7 +1188,7 @@ Our specialists also help new mothers with:
 - Baby care education
 - Household baby-related tasks
 
-## Why Choose RagsPro Newborn Specialists?
+## Why Choose Newborn Specialists?
 
 ### 1. Specialized Training
 - Certified in newborn care
@@ -1281,7 +1281,7 @@ Give your newborn the expert care they deserve.
 
 **📞 Call: 9971691558**
 **💬 WhatsApp: +919971691558**
-**📧 Email: info@ragspro.com**
+**📧 Email: subhashthapa87@gmail.com**
 
 Available 24/7 for consultations!
 
