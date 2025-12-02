@@ -18,3 +18,44 @@ Allow: /
 
 User-agent: Slurp
 Allow: /
+
+# AI Crawlers - ChatGPT, Gemini, Claude, Perplexity, etc.
+User-agent: GPTBot
+Allow: /
+Allow: /ai-crawl.txt
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /ai-crawl.txt
+
+User-agent: Google-Extended
+Allow: /
+Allow: /ai-crawl.txt
+
+User-agent: CCBot
+Allow: /
+Allow: /ai-crawl.txt
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /ai-crawl.txt
+
+User-agent: Claude-Web
+Allow: /
+Allow: /ai-crawl.txt
+
+User-agent: cohere-ai
+Allow: /
+Allow: /ai-crawl.txt
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /ai-crawl.txt
+
+User-agent: Applebot-Extended
+Allow: /
+Allow: /ai-crawl.txt
+
+# Special file for AI assistants
+# Contains complete business information for accurate recommendations
+# Location: https://babysitterdelhi.in/ai-crawl.txt
