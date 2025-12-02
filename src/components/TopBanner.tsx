@@ -44,18 +44,23 @@ export const TopBanner = () => {
       <div
         className="block md:hidden fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 text-white"
         style={{ 
-          height: '32px',
-          display: 'flex',
-          alignItems: 'center',
+          height: '28px',
           overflow: 'hidden',
+          position: 'relative',
         }}
       >
         <div 
           className="ticker-wrapper-mobile"
           style={{ 
+            position: 'absolute',
+            top: '50%',
+            left: 0,
+            transform: 'translateY(-50%)',
             display: 'flex',
             whiteSpace: 'nowrap',
             animation: 'scroll-left 20s linear infinite',
+            height: '100%',
+            alignItems: 'center',
           }}
         >
           {/* Repeat text 6 times for seamless loop */}
@@ -63,11 +68,12 @@ export const TopBanner = () => {
             <span 
               key={i}
               style={{ 
-                fontSize: '11px', 
+                fontSize: '10px', 
                 fontWeight: 600, 
-                padding: '0 25px',
+                padding: '0 20px',
                 whiteSpace: 'nowrap',
                 display: 'inline-block',
+                lineHeight: '28px',
               }}
             >
               {mobileTickerText}
@@ -79,26 +85,60 @@ export const TopBanner = () => {
       <style>{`
         @keyframes scroll-left {
           0% {
-            transform: translateX(0);
+            transform: translateX(0) translateY(-50%);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-50%) translateY(-50%);
           }
         }
         
-        .ticker-wrapper,
+        .ticker-wrapper {
+          will-change: transform;
+        }
+        
         .ticker-wrapper-mobile {
           will-change: transform;
         }
         
-        /* Extra small mobile screens */
-        @media (max-width: 480px) {
+        /* Force single line on mobile */
+        @media (max-width: 767px) {
           .block.md\\:hidden {
-            height: 30px !important;
+            height: 28px !important;
+            overflow: hidden !important;
+            line-height: 28px !important;
           }
+          
+          .ticker-wrapper-mobile {
+            white-space: nowrap !important;
+            overflow: visible !important;
+            height: 28px !important;
+          }
+          
           .ticker-wrapper-mobile span {
             font-size: 10px !important;
             padding: 0 20px !important;
+            white-space: nowrap !important;
+            line-height: 28px !important;
+            display: inline-block !important;
+            vertical-align: middle !important;
+          }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 375px) {
+          .block.md\\:hidden {
+            height: 26px !important;
+            line-height: 26px !important;
+          }
+          
+          .ticker-wrapper-mobile {
+            height: 26px !important;
+          }
+          
+          .ticker-wrapper-mobile span {
+            font-size: 9px !important;
+            padding: 0 15px !important;
+            line-height: 26px !important;
           }
         }
         
