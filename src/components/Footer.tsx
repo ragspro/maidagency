@@ -81,7 +81,7 @@ export const Footer = () => {
             <ul className="space-y-2 md:space-y-3 text-gray-400 text-xs md:text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>
-                <span>2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003</span>
+                <span>2034B/3, 3rd Floor, Pillanji Village, South Extension I, Kotla Mubarakpur, New Delhi – 110003</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400">▸</span>

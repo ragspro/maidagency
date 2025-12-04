@@ -100,7 +100,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-sm md:text-base">Address</p>
-                    <p className="text-gray-600 text-xs md:text-sm">2034B/3, South Extension I, Kotla Mubarakpur, New Delhi, Delhi 110003</p>
+                    <p className="text-gray-600 text-xs md:text-sm">2034B/3, 3rd Floor, Pillanji Village, South Extension I, Kotla Mubarakpur, New Delhi – 110003</p>
                   </div>
                 </div>
 
@@ -157,7 +157,7 @@ export const ContactSection = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Office Location - 2034B/3, South Extension I, Kotla Mubarakpur"
+                  title="Office Location - 2034B/3, 3rd Floor, Pillanji Village, South Extension I, Kotla Mubarakpur, New Delhi – 110003"
                 ></iframe>
               </div>
             </div>
