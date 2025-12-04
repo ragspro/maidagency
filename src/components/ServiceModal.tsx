@@ -148,21 +148,17 @@ export const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) =>
             </div>
           </div>
 
-          {/* Mobile Modal - Bottom Sheet */}
-          <div className="sm:hidden fixed inset-0 z-[70] flex items-end" onClick={onClose}>
+          {/* Mobile Modal - Centered */}
+          <div className="sm:hidden fixed inset-0 z-[70] flex items-center justify-center p-4" onClick={onClose}>
             <motion.div
-              initial={{ y: '100%' }}
-              animate={{ y: 0 }}
-              exit={{ y: '100%' }}
-              transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-              className="relative bg-white rounded-t-3xl shadow-2xl w-full max-h-[90vh] overflow-y-auto"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ type: 'spring', duration: 0.3 }}
+              className="relative bg-white rounded-2xl shadow-2xl w-full max-h-[85vh] overflow-y-auto"
               style={{ WebkitOverflowScrolling: 'touch' }}
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Drag Handle */}
-              <div className="sticky top-0 bg-white pt-2 pb-1 flex justify-center rounded-t-3xl z-10">
-                <div className="w-12 h-1.5 bg-gray-300 rounded-full"></div>
-              </div>
 
               {/* Header */}
               <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-4">
