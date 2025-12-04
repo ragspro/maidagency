@@ -62,7 +62,7 @@ export const ServicesGrid = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div className="services-grid grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
           {services.map((service, index) => (
             <motion.article
               key={service.id}
@@ -71,23 +71,23 @@ export const ServicesGrid = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -10, boxShadow: '0 25px 50px rgba(0,0,0,0.1)' }}
               onClick={() => handleServiceClick(service)}
-              className="service-card bg-white/80 backdrop-blur-lg rounded-2xl md:rounded-3xl p-5 md:p-7 shadow-lg border border-white/20 hover:border-indigo-200 transition-all group cursor-pointer"
+              className="service-card bg-white/80 backdrop-blur-lg rounded-xl md:rounded-3xl p-3 md:p-7 shadow-lg border border-white/20 hover:border-indigo-200 transition-all group cursor-pointer"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-indigo-100 text-indigo-600 rounded-2xl mb-3 md:mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                <ServiceIcon icon={service.icon} className="w-7 h-7 md:w-8 md:h-8" />
+              <div className="inline-flex items-center justify-center w-10 h-10 md:w-16 md:h-16 bg-indigo-100 text-indigo-600 rounded-xl md:rounded-2xl mb-2 md:mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                <ServiceIcon icon={service.icon} className="w-5 h-5 md:w-8 md:h-8" />
               </div>
-              <h3 className="text-base md:text-lg font-medium text-gray-900 mb-2 md:mb-3">
+              <h3 className="text-xs md:text-lg font-medium text-gray-900 mb-1.5 md:mb-3 leading-tight">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-3 md:mb-4">
+              <p className="text-gray-600 text-[10px] md:text-sm leading-relaxed mb-2 md:mb-4 line-clamp-2 md:line-clamp-none">
                 {service.description}
               </p>
               {service.priceRange && (
-                <p className="text-indigo-600 font-semibold text-xs md:text-sm mb-3">
+                <p className="text-indigo-600 font-semibold text-[10px] md:text-sm mb-2 md:mb-3">
                   💰 {service.priceRange}
                 </p>
               )}
-              <div className="text-indigo-600 font-medium text-xs md:text-sm inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+              <div className="text-indigo-600 font-medium text-[10px] md:text-sm inline-flex items-center gap-1 md:gap-2 group-hover:gap-3 transition-all">
                 View Details <span>→</span>
               </div>
             </motion.article>
