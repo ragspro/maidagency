@@ -10,10 +10,18 @@ interface ServiceModalProps {
 }
 
 export const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
-  // Prevent body scroll when modal is open
+  // Prevent body scroll when modal is open and scroll modal to top
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      
+      // Scroll modal container to top on mobile
+      setTimeout(() => {
+        const modalContainer = document.getElementById('service-modal-container');
+        if (modalContainer) {
+          modalContainer.scrollTop = 0;
+        }
+      }, 100);
     } else {
       document.body.style.overflow = '';
     }
@@ -21,7 +29,7 @@ export const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) =>
     return () => {
       document.body.style.overflow = '';
     };
-  }, [isOpen]);
+  }, [isOpen, service]);
 
   if (!service) return null;
 
@@ -40,11 +48,12 @@ export const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) =>
 
           {/* Modal Container - Scrollable */}
           <div 
+            id="service-modal-container"
             className="fixed inset-0 z-[70] overflow-y-auto"
             style={{ WebkitOverflowScrolling: 'touch' }}
             onClick={onClose}
           >
-            <div className="min-h-full flex items-center justify-center p-4">
+            <div className="min-h-full flex items-start sm:items-center justify-center p-4 pt-4 sm:pt-4">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
