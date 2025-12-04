@@ -187,10 +187,10 @@ textarea {
 
 /* Mobile layout consistency */
 @media (max-width: 768px) {
-  /* Maintain grid layouts on mobile - 2 columns for services */
+  /* Maintain grid layouts on mobile - 3 columns for services */
   .services-grid {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
   }
   
   /* Ensure cards maintain structure */
